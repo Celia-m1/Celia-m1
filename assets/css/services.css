@@ -1,0 +1,634 @@
+/*------- header ---------*/
+
+.heade {
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/article3.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heade .categories {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ----search bar----- */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #025A1F;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-bar-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar-icon img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* -----Categories Section------ */
+
+.categories {
+    position: relative;
+}
+
+.titcat {
+    cursor: pointer;
+}
+
+.Categories {
+    display: none;
+    background-color: rgba(41, 82, 30, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    width: 150px;
+}
+
+#toggle-cat:checked ~ .Categories {
+    display: block;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    margin-bottom: 5px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.categories ul li a:hover {
+    background-color: #f0f0f038;
+}
+
+
+
+
+
+
+/*-----------  Body ---------*/
+body{
+    background-color: #29521E66;
+}
+
+
+/*-------service menu----------*/
+
+.menu-container {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+}
+
+/* Hide the checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Style the circular "Services" button */
+.menu-toggle {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: #0f6324d8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Initial hidden state for the services menu */
+.services-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px; /* Position menu below the button */
+    right: 0;
+    width: 120px;
+    background-color: #0f632476;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+/* Show the menu when the checkbox is checked */
+.menu-checkbox:checked + .menu-toggle + .services-menu {
+    display: flex;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.service-link:hover {
+    background-color: #f0f0f038;
+}
+
+.service-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+
+
+
+
+/*----------- Book Section --------- */
+
+.exchange-container, .buy-container {
+    padding-top: 80px;
+    padding: 40px auto;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    color: #0b1008;
+    font-size: 40px;
+    padding: 1px 0px;
+    background-position: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.books-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 10px;
+    background-color: #EDE8DC;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    scrollbar-width: none;
+    margin-bottom: 20px;
+}
+
+.books-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 150px;
+    height: 270px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    color: #0b1008;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.book img {
+    width: 90px;
+    max-height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.book h4, .book p {
+    color: #1e1919;
+    margin: 1px 0;
+    line-height: 1;
+}
+
+.book h4 {
+    font-weight: bold;
+    font-size: medium;
+    margin: 5px;
+}
+
+.book p {
+    font-size: 0.75rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.rating .star {
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .book {
+        width: 100px;
+        height: 130px;
+    }
+
+    .book img {
+        width: 50px;
+    }
+
+    .book h4, .book p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----the Quote and Image Section-----*/
+
+.quote-gif-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+/* Quote Styling */
+.quote {
+    flex: 10%; 
+    font-size: 40px; 
+    font-style:italic; 
+    color: #4c6a3d; /* Quote color */
+    padding-right: 20px; /* Space between quote and image */
+    line-height: 1.5; 
+    border-bottom: #02732A;
+}
+
+/* Circular Image Container */
+/* Outer Circle */
+.outer-circle {
+    position: relative;
+    width: 200px; /* Set size of the outer circle */
+    height: 200px;
+    border-radius: 50%;
+    background-color: #4c6a3d; /* Outer border color */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for outer circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Container for positioning the inner circles */
+.image-container {
+    position: relative;
+    width: 320px; /* Slightly larger than the largest circle */
+    height: 320px;
+}
+
+/* Inner Circle 1 - Outer Image */
+.inner-circle1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #4c6a3d; /* Outer border color */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3), inset 0px 0px 10px rgba(76, 106, 61, 0.5); /* Outer and inset shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform 0.5s ease; /* Smooth zoom on hover */
+}
+
+/* Inner Circle 2 - Inner Image */
+.inner-circle2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #336027; /* Inner border color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    animation: rotateOnce 5s linear; /* Single rotation over 5 seconds */
+}
+/* Animation for a single 360-degree rotation */
+@keyframes rotateOnce {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Image Styling */
+.inner-circle1 img,
+.inner-circle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hover effect for a slight zoom on Inner Circle 1 */
+.inner-circle1:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+/* ---Cart Icon----- */
+.cart-icon {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+    width: 50px;
+    height: 50px;
+}
+
+.cart-icon img {
+    width: 100%; 
+    height: 100%; 
+}
+
+
+
+
+
+
+
+
+/*--------- articles ---------*/
+/* General Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.articles {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+article {
+    position: relative;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    margin: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+article:hover img {
+    transform: scale(1.1);
+}
+
+.article-body {
+    padding: 20px;
+}
+
+article h2 {
+    margin-bottom: 12px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+article:hover h2 {
+    color: #28666e;
+}
+
+.article-body p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .articles {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .article-body {
+        padding: 16px; 
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    article p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .articles {
+        gap: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*---------- footer -----*/
+
+/* General footer styling */
+footer {
+    background-color: #F1E5D1;
+    padding: 20px;
+    border-top: 2px solid #000;
+    font-family: Arial, sans-serif;
+}
+
+/* Container holding all footer sections */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 40px;
+}
+
+/* Individual footer sections */
+.footer-section {
+    width: 33%;
+    margin: 40px 0;
+}
+
+/* Styling for section headings */
+.footer-section h3 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* List styling for footer links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Link styling inside footer sections */
+.footer-section ul li a {
+    text-decoration: none;
+    color: #02732A;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #025A1F;
+}
+
+/* Social media list styling */
+.social-media {
+    padding-left: 0;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Icon styling for phone and email */
+.footer-section p img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Responsive design: Adjust layout on smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
+}
+
+/* Styling for the copyright section */
+.footer-copyright {
+    background-color: #29521ECC;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+

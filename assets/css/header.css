@@ -1,0 +1,99 @@
+/*------- header ---------*/
+
+.heade {
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/article3.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heade .categories {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ----search bar----- */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #025A1F;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-bar-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar-icon img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* -----Categories Section------ */
+
+.categories {
+    position: relative;
+}
+
+.titcat {
+    cursor: pointer;
+}
+
+.Categories {
+    display: none;
+    background-color: rgba(41, 82, 30, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    width: 150px;
+}
+
+#toggle-cat:checked ~ .Categories {
+    display: block;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    margin-bottom: 5px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.categories ul li a:hover {
+    background-color: #f0f0f038;
+}
+
+
