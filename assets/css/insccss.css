@@ -112,13 +112,8 @@ button:hover{
 a{
     color: #29521E;
 }
-footer{
-    height: 200px;
-    width: 100%;
-    background-color: black;
-  
-    
-}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     * {
@@ -162,6 +157,7 @@ footer {
     border-top: 2px solid #000; /* Top border */
     font-family: Arial, sans-serif; /* Font family */
     font-size: 20px; /* Font size */
+    height: 20%;
 }
 
 /* Footer container */
