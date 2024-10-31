@@ -1,0 +1,289 @@
+/* Global element styling */
+* {
+    box-sizing: border-box; /* Helps with sizing elements consistently */
+    font-size: 30px; /* Base font size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100; /* Light font weight */
+}
+
+/* Body styling */
+body {
+    background-color: #A5B68DCC; /* Light green background color */
+}
+
+/* Header styling */
+header {
+    font-size: 1.5rem; /* Large font size */
+    font-style: oblique; /* Italic text */
+    font-weight: 600; /* Bold font weight */
+    height: 150px; /* Fixed height */
+    text-align: center; /* Center text */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #EDE8DC; /* Light beige background */
+    margin-top: 0;
+    border-radius: 0px 0px 40px 40px; /* Rounded bottom corners */
+}
+
+/* Main container for layout alignment */
+.main {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: nowrap; /* No wrapping of items */
+    justify-content: space-evenly; /* Space items evenly */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Introduction section styling */
+.INTRO {
+    font-size: 0.9rem; /* Smaller font for intro section */
+    max-width: 500px; /* Limit section width */
+    margin: 30px auto; /* Center horizontally */
+    text-align: left; /* Left-align text */
+}
+
+.INTRO img {
+    width: 400px; /* Image width */
+    height: 300px; /* Image height */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.INTRO h4 {
+    font-size: 1.2rem; /* Smaller heading size */
+    margin: 10px 0; /* Space around heading */
+}
+
+.INTRO p {
+    font-size: 1rem; /* Smaller font for paragraph */
+    line-height: 1.4; /* Line height for readability */
+    margin: 20px;
+}
+
+/* Login form section styling */
+.log {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 100px; /* External margin */
+    padding: 20px; /* Inner padding */
+    width: 600px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    
+    border-radius: 40px; /* Rounded corners */
+    background-color: #EDE8DC; /* Background color */
+}
+
+.log h2 {
+    font-weight: 600; /* Bold heading */
+    font-size: larger; /* Larger font size */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+    width: 100%; /* Full width */
+}
+
+label {
+    width: 150px; /* Label width */
+    display: block; /* Block display for labels */
+    margin: 20px; /* Margin below label */
+    justify-content: center; /* Center content */
+}
+
+input {
+    height: 60px; /* Input field height */
+    width: 350px; /* Input field width */
+    font-size: 30px; /* Larger font size */
+    border-radius: 40px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below input */
+    background-color: #A5B68DCC; /* Light green background */
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Green button background */
+    height: 100px; /* Larger button height */
+    color: rgb(255, 255, 255); /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    font-size: 50px; /* Large font size */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Signup link styling */
+.insc {
+    margin-top: 70px; /* Space above link */
+    margin-right: 25%;
+    margin-bottom: 100px; /* Bottom margin */
+    text-align: center; /* Center text */
+}
+
+/* General button styling */
+button {
+    height: 50px; /* Button height */
+    width: 100px; /* Button width */
+    background-color: #29521E; /* Dark green background */
+    color: whitesmoke; /* Light text */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    background-color: #2e8b57; /* Darker green */
+}
+
+.submit {
+    margin-left: 70%; /* Position submit button to the right */
+}
+
+/* Link styling */
+a {
+    color: #29521E; /* Link color */
+    text-decoration: underline; /* Underlined text */
+}
+
+a:hover {
+    color: rgb(101, 73, 21); /* Darker color on hover */
+    transform: scale3d(1.05, 1.05, 1); /* Slight enlargement on hover */
+}
+
+p {
+    font-size: 50px; /* Larger font size for paragraph */
+}
+
+/* General footer styling */
+footer {
+    background-color: #F1E5D1; /* Light beige background */
+    padding: 20px; /* Padding */
+    border-top: 2px solid #000; /* Top border */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+}
+
+/* Footer container */
+.footer-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space sections */
+    align-items: flex-start; /* Align items at top */
+    flex-wrap: wrap; /* Wrap items if needed */
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Center footer */
+    margin-right: 40px; /* Additional right margin */
+}
+
+/* Footer section styling */
+.footer-section {
+    width: 33%; /* Each section is 1/3 width */
+    margin: 40px 0; /* Vertical margin */
+}
+
+
+/* Footer section heading styling */
+.footer-section h3 {
+    color: #000; /* Black text */
+    font-size: 30px; /* Large font size */
+    margin-bottom: 10px; /* Space below heading */
+    text-decoration: underline; /* Underlined text */
+}
+
+/* Footer list styling */
+.footer-section ul {
+    list-style: none; /* No list markers */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /* Space between items */
+}
+
+/* Link styling within footer */
+.footer-section ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #02732A; /* Green text */
+    font-size: 25px; /* Larger font */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #025A1F; /* Darker color */
+}
+
+/* Social media styling */
+.social-media {
+    padding-left: 0; /* No left padding */
+}
+
+.social-media li {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center items */
+}
+
+.social-media li img {
+    width: 18px; /* Icon width */
+    height: 18px; /* Icon height */
+    margin-right: 10px; /* Space beside icon */
+}
+
+/* Icon styling within footer */
+.footer-section p img {
+    width: 18px; /* Icon width */
+    height: 18px; /* Icon height */
+    margin-right: 10px; /* Space beside icon */
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Copyright section styling */
+.footer-copyright {
+    background-color: #29521ECC; /* Dark green background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Vertical padding */
+    margin-top: 40px; /* Space above section */
+}
+
+footer p {
+    font-size: 30px; /* Larger font in footer */
+}
+@media screen and (max-width: 768px) {
+    /* Stack INTRO and log sections vertically and adjust sizing */
+    .main {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .INTRO, .log {
+        max-width: 100%; /* Full width */
+        margin: 10px auto; /* Centered with reduced margin */
+        padding: 10px; /* Smaller padding */
+        width: 90%; /* Adjusted width for small screens */
+    }
+
+    .INTRO img {
+        width: 100%; /* Full width image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .log {
+        width: 90%; /* Adjusted width for small screens */
+        height: auto; /* Flexible height */
+    }
+
+    .log h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+
+    .submit {
+        margin-left: 0; /* Center the submit button */
+    }
+}
