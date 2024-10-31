@@ -62,6 +62,7 @@ footer {
 .social-media li {
     display: flex;
     align-items: center;
+    
 }
 
 .social-media li img {
