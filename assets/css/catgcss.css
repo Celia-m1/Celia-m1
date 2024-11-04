@@ -1,0 +1,458 @@
+/* General styles for all elements */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets a sans-serif font family */
+    font-weight: 300; /* Sets font weight to light */
+    font-style: oblique; /* Applies a slight slant to text */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+/*navigation bar*/
+.nav {
+    background-color: #ede8dc;
+    width: 100%;
+    height: 10%;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /*the div inside the nav*/
+  .nav-items {
+    background-color: #ede8dc;
+    right: 20%;
+    width: 30em;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 30px;
+  }
+  /*all links of the buttons*/
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  /*the buttons of the navigation bar*/
+  .nav-items > div {
+    font-size: 15px;
+    background-color: rgba(41, 82, 30, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 15px;
+    width: 20%;
+    height: 2em;
+    margin: 4% 2% 4% 2%;
+    cursor: pointer;
+    transition: scale 0.2s ease-in, opacity 0.2s ease-in, filter 0.2 ease-in;
+  }
+  /*buttons change size and get blurry when hovering one*/
+  .nav-items > div:hover {
+    scale: 1.1;
+  }
+  .nav-items:has(.btn :hover) .btn:not(:hover) {
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+  }
+  @media screen and (max-width: 520px) {
+  }
+  /*the logo*/
+  .nav > img {
+    width: 6em;
+    height: 6em;
+    top: 1em;
+    left: 20px;
+    &:hover {
+      filter: drop-shadow(1px 1px 2px rgba(8, 88, 8, 0.664));
+    }
+  }
+  
+
+body {
+    background-image:url(../images/img1scf.jpg); /* Sets a background image for the entire page */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+}
+
+/* Categories Section */
+.categories {
+    position: absolute; /* Positions element absolutely */
+    height: 800px; /* Sets a fixed height */
+    border-radius: 20%; /* Rounds the corners */
+    margin-left: 2rem; /* Adds left margin */
+    transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
+}
+
+.categories h3 {
+    color: white; /* Sets text color to white */
+    font-size: 2rem; /* Sets font size */
+}
+
+.titcat {
+    position: absolute;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.cat1 {
+    margin-top: 3rem; /* Adds top margin */
+    height: 100%;
+    width: 300px;
+    opacity: 0; /* Hides element initially */
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
+}
+
+/* Makes .cat1 visible when #toggle-cat is checked */
+#toggle-cat:checked ~ .cat1 {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0 10% 10% 0;
+    background-color: rgba(41, 82, 30, 0.4); /* Adds a semi-transparent dark background */
+}
+
+.titcat:hover {
+    transform: scale(1.1); /* Enlarges element on hover */
+}
+
+.cat1 h3 {
+    text-align: center;
+    font-size: 50px; /* Sets font size */
+}
+
+/* General list styling */
+ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    font-size: 50px;
+}
+
+.categories li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+.categories a {
+    color: antiquewhite;
+    text-decoration: none; /* Removes underline from links */
+    display: block;
+    padding: 10px; /* Adds padding around links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.categories a:hover {
+    background-color: rgba(255, 255, 255, 0.603); /* Lightens background color on hover */
+    color: #333; /* Changes text color */
+}
+
+.categories a:last-child:hover {
+    border-radius: 10%; /* Adds extra rounding on hover */
+    background-color: rgba(255, 255, 255, 0.534);
+    color: #333;
+}
+
+/* Style for the search bar container */
+.search-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 50px auto;
+    width: 50%; /* Sets width to half the page */
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #f1f1f1; /* Light background */
+    position: relative;
+}
+
+/* Style for the search input */
+.search-input {
+    width: 100%; /* Full width */
+    border: none;
+    outline: none; /* Removes border on focus */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Style for the search button */
+.search-btn {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular button */
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Change button background color on hover */
+.search-btn:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+/* Row styles for book layout */
+.row {
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+/* Book item styles */
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #96B6C5; /* Light blue background */
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.book:hover {
+    transform: scale(1.05); /* Scales up on hover */
+}
+
+.book img {
+    margin: 2px;
+    height: 300px;
+    width: 200px;
+}
+
+.book h1 {
+    color: black;
+    text-decoration: none;
+}
+
+.book a {
+    text-decoration: underline;
+}
+
+/* Global header styles */
+h1 {
+    color: beige;
+    text-decoration: none;
+}
+
+/* Caption styles for books */
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Description section styles */
+.discription {
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.discription img {
+    height: 150px;
+    width: 300px;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .discription {
+        font-size: 25px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .search-container {
+        margin-left: 40%;
+        width: 55%;
+    }
+
+    .categories h3 {
+        font-size: 1.5rem;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .book {
+        height: 300px;
+        width: 200px;
+    }
+
+    .book img {
+        height: 200px;
+        width: 150px;
+    }
+
+    .categories a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+    .discription {
+        font-size: 25px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .book img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .categories {
+        width: 80%;
+        position: relative;
+    }
+}
+
+/* Category-specific book styling */
+.bookscat {
+    margin: 2rem;
+    text-align: center;
+}
+
+
+
+/* General footer styling */
+footer {
+    background-color: #F1E5D1;
+    padding: 20px;
+    border-top: 2px solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    height: 20%;
+}
+
+/* Footer container layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 40px;
+}
+
+/* Footer section layout */
+.footer-section {
+    width: 33%;
+    margin: 40px 0;
+}
+
+/* Footer section heading styling */
+.footer-section h3 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Footer list layout */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer link styling */
+.footer-section ul li a {
+    text-decoration: none;
+    color: #02732A;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #025A1F;
+}
+
+/* Social media styling */
+.social-media {
+    padding-left: 0;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Icon styling within footer */
+.footer-section p img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Responsive layout adjustments for footer */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
+}
+
+/* Copyright section styling */
+.footer-copyright {
+    background-color: #29521ECC;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 30px;
+}
