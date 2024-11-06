@@ -10,7 +10,7 @@ body{
 }
 /*navigation bar*/
 .nav {
-    background-color: #ede8dc;
+    background-color: #1b7174;
     width: 100%;
     height: 15%;
     border-bottom-left-radius: 23px;
@@ -18,10 +18,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
   /*the div inside the nav*/
   .nav-items {
-    background-color: #ede8dc;
+    background-color: #1b7174;
     right: 20%;
     width: 30em;
     height: 10%;
@@ -32,13 +33,13 @@ body{
   }
   /*all links of the buttons*/
   a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
   /*the buttons of the navigation bar*/
   .nav-items > div {
     font-size: 15px;
-    background-color: rgba(41, 82, 30, 1);
+    background-color:  #dceded;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -9,7 +9,7 @@
 }
 /*navigation bar*/
 .nav {
-    background-color: #ede8dc;
+    background-color: #1b7174;
     width: 100%;
     height: 10%;
     border-bottom-left-radius: 23px;
@@ -20,7 +20,7 @@
   }
   /*the div inside the nav*/
   .nav-items {
-    background-color: #ede8dc;
+    background-color: #1b7174;
     right: 20%;
     width: 30em;
     height: 10%;
@@ -30,13 +30,13 @@
   }
   /*all links of the buttons*/
   a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
   /*the buttons of the navigation bar*/
   .nav-items > div {
     font-size: 15px;
-    background-color: rgba(41, 82, 30, 1);
+    background-color: #dceded;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ body {
 
 .cat1 {
     margin-top: 3rem; /* Adds top margin */
-    height: 100%;
+    height: 50%;
     width: 300px;
     opacity: 0; /* Hides element initially */
     visibility: hidden;
@@ -137,6 +137,7 @@ ul {
 }
 
 .categories a {
+    font-size: 18px;
     color: antiquewhite;
     text-decoration: none; /* Removes underline from links */
     display: block;
@@ -166,7 +167,7 @@ ul {
     border: 2px solid #333;
     border-radius: 25px;
     padding: 10px;
-    background-color: #f1f1f1; /* Light background */
+    background-color: #1b7174; /* Light background */
     position: relative;
 }
 
