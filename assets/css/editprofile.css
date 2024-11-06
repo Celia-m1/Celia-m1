@@ -1,0 +1,278 @@
+html,body{
+    background-color: #A5B68D;
+}
+.box {
+    border-radius: 30px;
+    background-color: #EDE8DC;
+    width: 60%;
+    height: 380px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+   grid-template-columns: 2fr,1fr;
+    
+    padding: 5%;}
+
+
+.form-group{ 
+    width:100%;
+    height: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: auto;
+    gap: 20%;
+}    
+
+.form-container {
+    grid-column: 1;
+    width: 50%; 
+    margin-bottom: 20px;
+    margin: left 0.1em;
+    padding: 10px; 
+   
+    border-radius: 10px; 
+}
+
+.form-group {
+    margin-bottom: 25px; 
+}
+
+.labeledit {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%; /* Makes input fields take full width */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.photo{
+    grid-column: 2;
+   ;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-right: 80px;
+    display :flex;
+}
+
+
+
+.button-cotainer{
+    
+    display:flex;
+    align-items: center;
+   
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+
+.profile-photo-button {
+    background-color: #A5B68D; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+    display: flex;
+    width: 20%;
+    height:5%;
+    justify-content: center;
+    margin-right: 35%;
+    
+}
+ 
+.right{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+
+    
+}
+.submit{
+    background-color: #29521E ;
+    color :#ffffff;
+    border-radius: 15% ;
+    cursor: pointer;
+    width:90px;
+    padding: 8px;
+    margin-left:60%;
+    margin-top: 80%;
+   
+    }
+
+    footer {
+        background-color: #F1E5D1;
+        padding: 20px;
+        border-top: 2px solid #000;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Container holding all footer sections */
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-right: 40px;
+    }
+    
+    /* Individual footer sections */
+    .footer-section {
+        width: 33%;
+        margin: 40px 0;
+    }
+    
+    /* Styling for section headings */
+    .footer-section h3 {
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    /* List styling for footer links */
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+    
+    /* Link styling inside footer sections */
+    .footer-section ul li a {
+        text-decoration: none;
+        color: #02732A;
+        transition: color 0.3s ease;
+    }
+    
+    /* Hover effect for footer links */
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+        color: #025A1F;
+    }
+    
+    /* Social media list styling */
+    .social-media {
+        padding-left: 0;
+    }
+    
+    .social-media li {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .social-media li img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    
+    /* Icon styling for phone and email */
+    .footer-section p img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    
+    /* Responsive design: Adjust layout on smaller screens */
+    @media screen and (max-width: 768px) {
+        .footer-section {
+            width: 100%;
+        }
+    }
+    
+    /* Styling for the copyright section */
+    .footer-copyright {
+        background-color: #29521ECC;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+    }
+
+    .nav {
+        background-color: #ede8dc;
+        width: 100%;
+        height: 10%;
+        border-bottom-left-radius: 23px;
+        border-bottom-right-radius: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      /*the div inside the nav*/
+      .nav-items {
+        background-color: #ede8dc;
+        right: 20%;
+        width: 30em;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        border-bottom-right-radius: 30px;
+      }
+      /*all links of the buttons*/
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      /*the buttons of the navigation bar*/
+      .nav-items > div {
+        font-size: 15px;
+        background-color: rgba(41, 82, 30, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-radius: 15px;
+        width: 3em;
+        height: 2em;
+        margin: 4% 2% 4% 2%;
+        cursor: pointer;
+        transition: scale 0.2s ease-in, opacity 0.2s ease-in, filter 0.2 ease-in;
+      }
+      /*buttons change size and get blurry when hovering one*/
+      .nav-items > div:hover {
+        scale: 1.1;
+      }
+      .nav-items:has(.btn :hover) .btn:not(:hover) {
+        scale: 0.8;
+        opacity: 0.8;
+        filter: blur(4px);
+      }
+      @media screen and (max-width: 520px) {
+      }
+      /*the logo*/
+      .nav > img {
+        width: 6em;
+        height: 6em;
+        top: 1em;
+        left: 20px;
+        &:hover {
+          filter: drop-shadow(1px 1px 2px rgba(8, 88, 8, 0.664));
+        }
+      }
