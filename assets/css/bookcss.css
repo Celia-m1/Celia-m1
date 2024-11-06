@@ -1,0 +1,441 @@
+*{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: white;
+}
+body{
+    background-image:url(../images/backgrndsc.jpg);
+    ;
+}
+/*navigation bar*/
+.nav {
+    background-color: #ede8dc;
+    width: 100%;
+    height: 15%;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /*the div inside the nav*/
+  .nav-items {
+    background-color: #ede8dc;
+    right: 20%;
+    width: 30em;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 30px;
+  }
+  /*all links of the buttons*/
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  /*the buttons of the navigation bar*/
+  .nav-items > div {
+    font-size: 15px;
+    background-color: rgba(41, 82, 30, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 15px;
+    width: 20%;
+    height: 2em;
+    margin: 4% 2% 4% 2%;
+    cursor: pointer;
+    transition: scale 0.2s ease-in, opacity 0.2s ease-in, filter 0.2 ease-in;
+  }
+  /*buttons change size and get blurry when hovering one*/
+  .nav-items > div:hover {
+    scale: 1.1;
+  }
+  .nav-items:has(.btn :hover) .btn:not(:hover) {
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+  }
+  @media screen and (max-width: 520px) {
+  }
+  /*the logo*/
+  .nav > img {
+    width: 6em;
+    height: 6em;
+    top: 1em;
+    left: 20px;
+    &:hover {
+      filter: drop-shadow(1px 1px 2px rgba(8, 88, 8, 0.664));
+    }
+  }
+  
+  
+.book {
+    margin:5%
+    ;
+    margin-left: 12%;
+    margin-bottom: 0%;
+    padding: 20px;
+    padding-bottom: 0%;
+    margin-bottom:  2%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 90%;
+    width: 65%;
+    background-color: #003161;
+    border-radius: 40px;
+   
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 40%;
+    border-radius: 40px;
+    background-color: white; /* Green with transparency */
+    
+}
+.pic img{
+    margin: 10px;
+    height: 280px;
+    border-radius: 40px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.stars {
+    font-size: 2rem;
+   
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.discription {
+    width: 800px;
+    margin-left: 2rem;
+}
+.sec2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.username{
+    margin: 3rem;
+    margin-left: 80px;
+
+    height: 60px;
+    width: 350px;
+    background-color:  #BDE6F1;
+    ;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+.username img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.details{
+    margin-left: 2rem;
+    margin-top: 0%;
+}
+.boutton{
+    margin: 2rem;
+    display: flex;
+    margin-right: 2rem;
+
+}
+button{
+    height: 40%;
+    width: 350px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 2rem;
+    background-color: #FFE59D;
+    color: black;
+
+}
+
+
+button:hover {
+    background-color: #06667A; /* Couleur légèrement plus foncée au survol */
+    transform: scale(1.08); /* Agrandissement plus doux au survol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition plus fluide */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur */
+}
+
+
+.feed {
+    margin: 20px;
+    font-size: 25px;
+    height: 200px;
+    width: 400px;
+    border-radius: 40px;
+    background-color:#003161;
+   
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du conteneur */
+}
+
+#feed2 {
+   margin: 0%;
+   background-color: #FFE59D;
+}
+
+.feed .text {
+    width: 380px;
+    margin: 10px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+}
+#done{
+    font-size: 40px;
+    text-align: center;
+}
+.feedbacks{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.feedback-box {
+    margin: 20px;
+    font-size: 25px;
+    height: 250px;
+    width: 400px;
+    border-radius: 40px;
+    background-color:#6482AD;
+   
+    padding: 10px;
+}
+.feedback-box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.feedback-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    resize: none;
+    margin-bottom: 10px;
+}
+.feedback-box input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    height: 50px;
+
+    border-radius: 40px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.feedback-box input[type="submit"]:hover {
+    background-color: #218838;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    * {
+        font-size: 24px; /* Slightly reduce font size */
+    }
+
+    .book {
+        width: 90%; /* Increase width for smaller screens */
+        margin-left: 5%; /* Center it */
+    }
+
+    .pic {
+        width: 280px; /* Decrease image container width */
+    }
+
+    .pic img {
+        height: 240px; /* Reduce image height */
+        width: 240px; /* Reduce image width */
+    }
+
+    .discription {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: 5%; /* Center it */
+    }
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    header {
+        height: 60%; /* Reduce header height */
+    }
+
+    .book {
+        flex-direction: column; /* Stack books vertically */
+        width: 95%; /* Adjust width */
+        margin-left: 2.5%; /* Center it */
+    }
+
+    .username {
+        width: 80%; /* Adjust username container width */
+        margin-left: 10%; /* Center it */
+    }
+
+    button {
+        width: 100px; /* Reduce button width */
+    }
+    footer{
+        height: 100%;
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 18px; /* Reduce font size for mobile */
+    }
+
+    header {
+        height:60%;
+    }
+
+    .discription {
+        width: 100%; /* Full width for description */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .feedback-box {
+        width: 90%; /* Adjust feedback box width */
+        margin-left: 5%; /* Center it */
+    }
+
+    button {
+        height: 60px; /* Reduce button height */
+        width: 80px; /* Reduce button width */
+    }
+
+    .pic {
+        width: 60%; /* Full width for image container */
+        height: 60%;
+    }
+
+    .pic img {
+        height: 70%; /* Adjust image height */
+        width: 70%; /* Full width for images */
+    }
+    footer{
+        height: 80%;
+        bottom: 0%;
+    }
+}
+/* General footer styling */
+footer {
+    background-color: #F1E5D1;
+    padding: 20px;
+    border-top: 2px solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    height:80%;
+    bottom: 0px;
+}
+
+
+
+/* Footer container layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 40px;
+}
+
+/* Footer section layout */
+.footer-section {
+    width: 33%;
+    margin: 40px 0;
+}
+
+/* Footer section heading styling */
+.footer-section h3 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Footer list layout */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer link styling */
+.footer-section ul li a {
+    text-decoration: none;
+    color: #02732A;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #025A1F;
+}
+
+/* Social media styling */
+.social-media {
+    padding-left: 0;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Icon styling within footer */
+.footer-section p img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+
+/* Copyright section styling */
+.footer-copyright {
+    background-color: #29521ECC;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 30px;
+}

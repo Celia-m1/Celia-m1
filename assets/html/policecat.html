@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="../css/policcss.css"> <!-- Link to external CSS for styling -->
+    <title>Categories Page</title> <!-- Page title for better SEO -->
+</head>
+<body>
+    <header>
+        <nav class="nav"> <!-- Navigation bar -->
+            
+            <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO"> <!-- Logo image -->
+            <div class="nav-items"> <!-- Container for navigation buttons -->
+                <div class="btn"><a href="">HOME</a></div> <!-- Home button -->
+                <div class="btn"><a href="">SERVICES</a></div> <!-- Services button -->
+                <div class="btn"><a href="">MAP</a></div> <!-- Map button -->
+                <div class="btn"><a href="">PROFILE</a></div> <!-- Profile button -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="categories"> <!-- Categories section -->
+            <!-- Hidden checkbox for toggle functionality to show/hide categories -->
+            <input type="checkbox" id="toggle-cat" hidden>
+            
+            <!-- Label to simulate the clickable button for toggling categories -->
+            <label for="toggle-cat" class="titcat">
+                <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
+                <h3>Categories</h3> <!-- Categories title -->
+            </label>
+           
+            <!-- Content to show/hide categories -->
+            <div class="cat1">
+                <ul> <!-- Unordered list of categories -->
+                    <li><a href="https://www.instagram.com/">Biology</a></li>
+                    <li><a href="#">Educatif</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Police</a></li>
+                    <li><a href="#">Religious</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="search-container"> <!-- Search bar section -->
+            <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
+            <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
+        </div>
+        
+        <div class="discription">  <!-- Description section -->
+            <p>Discover gripping crime novels<br> where every clue pulls you deeper into mystery and suspense.</p>
+        </div>
+
+        <div class="bookscat"> <!-- Books category section -->
+            <!-- Rows of books -->
+            <div class="row"> <!-- First row of books -->
+                <a href="../html/book3sc.html" target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/Dune-Frank_Herbert_(1965)_First_edition.jpg" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>Dune</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="../html/book3sc.html" target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/neuromancer.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>Neuromancer</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="../html/book3sc.html" target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/left hand.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h3>The Left Hand <br>of Darkness</h3></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+            </div>
+
+            <div class="row"> <!-- Second row of books -->
+                <a href="../html/book3sc.html"target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/book4.jpg" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>Brave New World</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="../html/book3sc.html" target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/book5.jpg" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>The Stars<br> My Destination</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="book6sc.html" target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="c:\Users\j\Downloads\9780593497487.jfif" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>Foundation</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+            </div>
+
+            <div class="row"> <!-- Third row of books -->
+                <a href="#">
+                    <div class="book">
+                        <figure>
+                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1>Book 7</h1></figcaption> <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="book">
+                        <figure>
+                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1></h1></figcaption> <!-- Empty title (optional) -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="book">
+                        <figure>
+                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
+                            <figcaption><h1></h1> </figcaption> <!-- Empty title (optional) -->
+                        </figure>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container"> <!-- Footer container -->
+            <!-- Support & Contact Section -->
+            <div class="footer-section">
+                <h3>Support & Contact:</h3> <!-- Section title -->
+                <ul> <!-- List of support links -->
+                    <li><a href="../html/Contact.html">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+                <p>
+                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999 <!-- Contact phone number -->
+                </p>
+            </div>
+
+            <!-- About Us & Policies Section -->
+            <div class="footer-section">
+                <h3>About Us & Policies:</h3> <!-- Section title -->
+                <ul> <!-- List of about and policies links -->
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
+                </ul>
+                <p>
+                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com <!-- Contact email -->
+                </p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h3>Social Media:</h3> <!-- Section title -->
+                <ul class="social-media"> <!-- List of social media links -->
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <img src="../images/facebook.png" alt="Facebook icon"> Libro <!-- Facebook link -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <img src="../images/instagram.png" alt="Instagram icon"> Libro <!-- Instagram link -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Twitter">
+                            <img src="../images/twitter.png" alt="Twitter icon"> Libro <!-- Twitter link -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro <!-- LinkedIn link -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright section -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Libro. All rights reserved.</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+</body>
+</html>
