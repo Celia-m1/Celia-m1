@@ -345,26 +345,26 @@ button:hover {
 }
 /* General footer styling */
 footer {
-    background-color: #F1E5D1;
+    background-color: #166063;
     padding: 20px;
     border-top: 2px solid #000;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    height:80%;
-    bottom: 0px;
+    height: 50%;
+    color: #dceded ;
+    
 }
-
-
 
 /* Footer container layout */
 .footer-container {
     display: flex;
+   
     justify-content: space-between;
-    align-items: flex-start;
+   
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    margin-right: 40px;
+ 
 }
 
 /* Footer section layout */
@@ -375,7 +375,7 @@ footer {
 
 /* Footer section heading styling */
 .footer-section h3 {
-    color: #000;
+    color: white;
     font-size: 30px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -394,14 +394,14 @@ footer {
 /* Footer link styling */
 .footer-section ul li a {
     text-decoration: none;
-    color: #02732A;
+    color: #dceded ;
     font-size: 25px;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
     text-decoration: underline;
-    color: #025A1F;
+    color: #86dfdf;
 }
 
 /* Social media styling */
@@ -427,16 +427,24 @@ footer {
     margin-right: 10px;
 }
 
+/* Responsive layout adjustments for footer */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
+}
 
 /* Copyright section styling */
 .footer-copyright {
-    background-color: #29521ECC;
-    color: white;
+    color: black;
+    background-color: #dceded ;
+   
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
 }
 
-footer p {
+.footer-copyright p {
     font-size: 30px;
+color: black;
 }
