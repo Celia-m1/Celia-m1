@@ -4,7 +4,7 @@ body {
 }
 /*navigation bar*/
 .nav {
-  background-color: #ede8dc;
+  background-color: #166063;
   width: 100%;
   height: 10%;
   border-bottom-left-radius: 23px;
@@ -15,23 +15,25 @@ body {
 }
 /*the div inside the nav*/
 .nav-items {
-  background-color: #ede8dc;
+  background-color: #166063;
   right: 20%;
   width: 30em;
   height: 10%;
+  margin-right: 2em;
   display: flex;
   justify-content: center;
   border-bottom-right-radius: 30px;
 }
 /*all links of the buttons*/
-a {
-  color: white;
+.btn a {
+  color: #166063;
+  font-weight: 600;
   text-decoration: none;
 }
 /*the buttons of the navigation bar*/
 .nav-items > div {
   font-size: 15px;
-  background-color: rgba(41, 82, 30, 1);
+  background-color: #dceded;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,16 +55,34 @@ a {
   opacity: 0.8;
   filter: blur(4px);
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
+  .nav-items {
+    background-color: #166063;
+    right: 20%;
+    width: 30em;
+    height: 10%;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    border-bottom-right-radius: 30px;
+  }
+  .profile-pic > img {
+    height: 10em;
+    width: 10em;
+    max-width: 100%;
+  }
 }
+
 /*the logo*/
 .nav > img {
   width: 6em;
   height: 6em;
   top: 1em;
   left: 20px;
+  filter: drop-shadow(1px 1px 3px #dceded);
   &:hover {
-    filter: drop-shadow(1px 1px 2px rgba(8, 88, 8, 0.664));
+    filter: drop-shadow(2px 2px 4px #dceded);
   }
 }
 
