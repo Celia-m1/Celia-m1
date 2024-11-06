@@ -1,7 +1,7 @@
 
 .box1{
     border-radius: 30px;            
-    background-color: #EDE8DC; 
+    background-color: #dceded; 
     width: 60%; 
     margin-top: 5% ;
     margin-bottom: 10%;
@@ -19,7 +19,7 @@ html, body {
     height: 100%;          
     margin: 0;            
     padding: 0;           
-    background-color: #A5B68D; 
+    background-color:white; 
 }
 .right-side{
     grid-column: 2;
@@ -45,7 +45,7 @@ html, body {
            
             width:100%;
             height: 300px;            
-            background-color: #29521ec0;  
+            background-color: #166063;  
             border-radius: 30px;   
     justify-content: center;       
     align-items: center;            
@@ -72,18 +72,18 @@ html, body {
 }
 .form1{
     width:100%;
-    color:  #29521E;
+    color: #166063;
 
 
 }
 .form1 input{
-    background-color:#29521ec0;
+    background-color: white;
     width:100%;
     border-radius: 10px;
     color: #ffffff;
 }
 input, select{
-    background-color:#29521ec0;
+    background-color: white;
     width:100%;
     height: 10px;
     color: #fff;
@@ -100,7 +100,7 @@ input, select>.radio-group{
     color:black;
 }
 .form1 textarea{
-    background-color: #29521ec0;
+    background-color: white;
     width:100%;
     border-radius: 10px;
     color:#ffffff;
@@ -119,7 +119,7 @@ flex-direction:column;
 
 }
 .submit{
-background-color: #29521E ;
+background-color: #166063 ;
 color :#ffffff;
 border-radius: 15% ;
 cursor: pointer;
@@ -128,7 +128,7 @@ margin-top: 80%;
 
 }
 .submit:hover {
-    background-color: #346e19;
+    background-color: black;
 }
 
 .radio-group label {
@@ -155,7 +155,7 @@ input[type="radio"] {
 
 
 input[type="radio"]:checked {
-    background-color: #29521E ;
+    background-color: #166063 ;
      
       
     }
@@ -308,7 +308,7 @@ footer {
 }
 
 .nav {
-    background-color: #ede8dc;
+    background-color: #166063;
     width: 100%;
     height: 10%;
     border-bottom-left-radius: 23px;
@@ -319,7 +319,7 @@ footer {
   }
   /*the div inside the nav*/
   .nav-items {
-    background-color: #ede8dc;
+    background-color: #166063;
     right: 20%;
     width: 30em;
     height: 10%;
@@ -329,13 +329,13 @@ footer {
   }
   /*all links of the buttons*/
   a {
-    color: white;
+    color: #166063;
     text-decoration: none;
   }
   /*the buttons of the navigation bar*/
   .nav-items > div {
     font-size: 15px;
-    background-color: rgba(41, 82, 30, 1);
+    background-color: #dceded;
     display: flex;
     align-items: center;
     justify-content: center;
