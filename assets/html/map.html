@@ -1,0 +1,65 @@
+<!Doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../css/map.css   ">
+</head>
+
+<body>
+
+    <section class="location-section">
+        <h2>Where are you?</h2>
+        <div id="map"></div>
+    </section>
+
+
+    <div id ="map">
+
+        <script >
+
+            function initMap() {
+                var location = {lat: 36.771721, lng: 3.051760};
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 10, 
+                    center: location 
+                }); 
+
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                })
+            }
+
+        </script>
+        
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApVNGcLgc88cmrlTsuLu7wDgM0fUpOLrU&libraries=maps&v=beta&callback=initMap">
+        </script>
+
+    </div>
+
+    <section class="results-section">
+        <h3>RESULTS:</h3>
+        <div class="result-item">
+            <span>Book store 1</span>
+            <span>400M</span>
+        </div>
+        <div class="result-item">
+            <span>Book store 2</span>
+            <span>500M</span>
+        </div>
+        <div class="result-item">
+            <span>Book store 3</span>
+            <span>600M</span>
+        </div>
+    </section>
+
+
+</body>
+
+
+</html>

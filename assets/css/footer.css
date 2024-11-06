@@ -26,14 +26,16 @@ footer {
 /* Styling for section headings */
 .footer-section h3 {
     color: #000;
-    font-size: 10px;
+    font-size: 18px;
     margin-bottom: 10px;
     text-decoration: underline;
+
 }
 
 /* List styling for footer links */
 .footer-section ul {
     list-style: none;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -71,11 +73,16 @@ footer {
     margin-right: 10px;
 }
 
+.footer-section p{
+
+    font-size: 16 px ;
+    text-align: left;
+}
 /* Icon styling for phone and email */
 .footer-section p img {
     width: 18px;
     height: 18px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 /* Responsive design: Adjust layout on smaller screens */
@@ -88,8 +95,12 @@ footer {
 /* Styling for the copyright section */
 .footer-copyright {
     background-color: #29521ECC;
-    color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
+    
+}
+
+.footer-copyright p{
+    color: white;
 }
