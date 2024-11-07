@@ -1,194 +1,200 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8"> <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
     <link rel="stylesheet" href="../css/policcss.css"> <!-- Link to external CSS for styling -->
-    <title>police category</title> <!-- Page title for better SEO -->
+    <title> police</title> <!-- Page title for better SEO -->
+    <link rel="icon" href="../images/logo copy.png" type="image">
 </head>
-<body>
-    <header>
-        <nav class="nav"> <!-- Navigation bar -->
-            
-            <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO"> <!-- Logo image -->
-            <div class="nav-items"> <!-- Container for navigation buttons -->
-                <div class="btn"><a href="../html/home.html">HOME</a></div> <!-- Home button -->
-                <div class="btn"><a href="../html/services.html">SERVICES</a></div> <!-- Services button -->
-                <div class="btn"><a href="../html/map.html">MAP</a></div> <!-- Map button -->
-                <div class="btn"><a href="../html/account.html">PROFILE</a></div> <!-- Profile button -->
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="categories"> <!-- Categories section -->
-            <!-- Hidden checkbox for toggle functionality to show/hide categories -->
-            <input type="checkbox" id="toggle-cat" hidden>
+    
+
+    <body>
+    <nav class="nav">
+        <link rel="stylesheet" href="../css/navigationbar.css">
+        <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
+        <div class="nav-items">
+            <div class="btn"><a href="./home.html">HOME</a></div>
+            <div class="btn"><a href="./services.html">SERVICES</a></div>
+            <div class="btn"><a href="./html/map.html">MAP</a></div>
+            <div class="btn"><a href="./account.html">PROFILE</a></div>
+        </div>
+    </nav>
             
-            <!-- Label to simulate the clickable button for toggling categories -->
-            <label for="toggle-cat" class="titcat">
-                <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
-                <h3>Categories</h3> <!-- Categories title -->
-            </label>
-           
-            <!-- Content to show/hide categories -->
-            <div class="cat1">
-                <ul> <!-- Unordered list of categories -->
-                    <li><a href="../html/biology.html">Biology</a></li>
-                    <li><a href="../html/educatif.html">Educatif</a></li>
-                    <li><a href="../html/mathscat.html">Mathematics</a></li>
-                    <li><a href="../html/physics.html">Physics</a></li>
-                    <li><a href="../html/policecat.html">Police</a></li>
-                    <li><a href="../html/relegiouscat.html">Religious</a></li>
-                    <li><a href="../html/romance.html">Romance</a></li>
-                    <li><a href="../html/scienficcat.html">Science Fiction</a></li>
-                </ul>
+    
+    <div class="categories"> <!-- Categories section -->
+        <!-- Hidden checkbox for toggle functionality to show/hide categories -->
+        <input type="checkbox" id="toggle-cat" hidden>
+    
+        <!-- Label to simulate the clickable button for toggling categories -->
+        <label for="toggle-cat" class="titcat">
+            <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
+            <h3>  Categories</h3> <!-- Categories title -->
+        </label>
+    
+        <!-- Content to show/hide categories -->
+        <div class="cat1">
+            <ul> <!-- Unordered list of categories -->
+                <li><a href="../html/biology.html">Biology</a></li>
+                <li><a href="../html/educatif.html">Educatif</a></li>
+                <li><a href="../html/mathscat.html">Mathematics</a></li>
+                <li><a href="../html/physics.html">Physics</a></li>
+                <li><a href="../html/policecat.html">Police</a></li>
+                <li><a href="../html/relegiouscat.html">Religious</a></li>
+                <li><a href="../html/romance.html">Romance</a></li>
+                <li><a href="../html/scienficcat.html">Science Fiction</a></li>
+            </ul>
+        </div>
+    </div>
+            <div class="search-container"> <!-- Search bar section -->
+                <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
+                <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
             </div>
-        </div>
-        
-        <div class="search-container"> <!-- Search bar section -->
-            <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
-            <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
-        </div>
-        
+    
+    
+    
         <div class="discription">  <!-- Description section -->
-            <p>Discover gripping crime novels<br> where every clue pulls you deeper into mystery and suspense.</p>
+            <p>Dare to discover the unknown: find science fiction that pushes the boundaries of imagination.</p>
         </div>
 
         <div class="bookscat"> <!-- Books category section -->
             <!-- Rows of books -->
             <div class="row"> <!-- First row of books -->
-                <a href="../html/book3sc.html" target="_blank">
-                    <div class="book">
-                        <figure>
-                            <img src="../images/Dune-Frank_Herbert_(1965)_First_edition.jpg" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>Dune</h1></figcaption> <!-- Book title -->
-                        </figure>
-                    </div>
-                </a>
-                <a href="../html/book3sc.html" target="_blank">
-                    <div class="book">
-                        <figure>
-                            <img src="../images/neuromancer.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>Neuromancer</h1></figcaption> <!-- Book title -->
-                        </figure>
-                    </div>
-                </a>
-                <a href="../html/book3sc.html" target="_blank">
-                    <div class="book">
-                        <figure>
-                            <img src="../images/left hand.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h3>The Left Hand <br>of Darkness</h3></figcaption> <!-- Book title -->
-                        </figure>
-                    </div>
-                </a>
-            </div>
-
-            <div class="row"> <!-- Second row of books -->
                 <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="../images/book4.jpg" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>Brave New World</h1></figcaption> <!-- Book title -->
+                            <img src="../images/Dune-Frank_Herbert_(1965)_First_edition.jpg" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Dune</h1>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
-                <a href="../html/book3sc.html" target="_blank">
+                <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="../images/book5.jpg" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>The Stars<br> My Destination</h1></figcaption> <!-- Book title -->
+                            <img src="../images/neuromancer.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Neuromancer</h1>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
-                <a href="book6sc.html" target="_blank">
+                <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="c:\Users\j\Downloads\9780593497487.jfif" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>Foundation</h1></figcaption> <!-- Book title -->
+                            <img src="../images/left hand.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h3>The Left Hand <br>of Darkness</h3>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
             </div>
 
-            <div class="row"> <!-- Third row of books -->
-                <a href="#">
+            <div class="row"> <!-- First row of books -->
+                <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1>Book 7</h1></figcaption> <!-- Book title -->
+                            <img src="../images/Dune-Frank_Herbert_(1965)_First_edition.jpg" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Dune</h1>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1></h1></figcaption> <!-- Empty title (optional) -->
+                            <img src="../images/neuromancer.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Neuromancer</h1>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../html/book3sc.html"target="_blank">
                     <div class="book">
                         <figure>
-                            <img src="c:\Users\j\Downloads\you.jfif" alt="Book Cover"> <!-- Book cover image -->
-                            <figcaption><h1></h1> </figcaption> <!-- Empty title (optional) -->
+                            <img src="../images/left hand.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h3>The Left Hand <br>of Darkness</h3>  <!-- Book title -->
                         </figure>
                     </div>
                 </a>
             </div>
+
+            <div class="row"> <!-- First row of books -->
+                <a href="../html/book3sc.html"target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/Dune-Frank_Herbert_(1965)_First_edition.jpg" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Dune</h1>  <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="../html/book3sc.html"target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/neuromancer.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h1>Neuromancer</h1>  <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+                <a href="../html/book3sc.html"target="_blank">
+                    <div class="book">
+                        <figure>
+                            <img src="../images/left hand.jpg" height="300px" width="200px" alt="Book Cover"> <!-- Book cover image -->
+                              <h3>The Left Hand <br>of Darkness</h3>  <!-- Book title -->
+                        </figure>
+                    </div>
+                </a>
+            </div>
+
+            
         </div>
-    </main>
+    </body>
 
     <footer>
-        <div class="footer-container"> <!-- Footer container -->
+        <link rel="stylesheet" href="../css/footer.css">
+        <div class="footer-container">
             <!-- Support & Contact Section -->
             <div class="footer-section">
-                <h3>Support & Contact:</h3> <!-- Section title -->
-                <ul> <!-- List of support links -->
+                <h3>Support & Contact:</h3>
+                <ul>
                     <li><a href="../html/Contact.html">Contact Us</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Feedback</a></li>
                 </ul>
                 <p>
-                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999 <!-- Contact phone number -->
+                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999
                 </p>
             </div>
 
             <!-- About Us & Policies Section -->
             <div class="footer-section">
-                <h3>About Us & Policies:</h3> <!-- Section title -->
-                <ul> <!-- List of about and policies links -->
+                <h3>About Us & Policies:</h3>
+                <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
                 </ul>
                 <p>
-                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com <!-- Contact email -->
+                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com
                 </p>
             </div>
 
             <!-- Social Media Section -->
             <div class="footer-section">
-                <h3>Social Media:</h3> <!-- Section title -->
-                <ul class="social-media"> <!-- List of social media links -->
+                <h3>Social Media:</h3>
+                <ul class="social-media">
                     <li>
                         <a href="#" aria-label="Facebook">
-                            <img src="../images/facebook.png" alt="Facebook icon"> Libro <!-- Facebook link -->
+                            <img src="../images/facebook.png" alt="Facebook icon"> Libro
                         </a>
                     </li>
                     <li>
                         <a href="#" aria-label="Instagram">
-                            <img src="../images/instagram.png" alt="Instagram icon"> Libro <!-- Instagram link -->
+                            <img src="../images/instagram.png" alt="Instagram icon"> Libro
                         </a>
                     </li>
                     <li>
                         <a href="#" aria-label="Twitter">
-                            <img src="../images/twitter.png" alt="Twitter icon"> Libro <!-- Twitter link -->
+                            <img src="../images/twitter.png" alt="Twitter icon"> Libro
                         </a>
                     </li>
                     <li>
                         <a href="#" aria-label="LinkedIn">
-                            <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro <!-- LinkedIn link -->
+                            <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro
                         </a>
                     </li>
                 </ul>
@@ -197,8 +203,7 @@
 
         <!-- Copyright section -->
         <div class="footer-copyright">
-            <p>&copy; 2024 Libro. All rights reserved.</p> <!-- Copyright notice -->
+            <p>&copy; 2024 Libro. All rights reserved.</p>
         </div>
     </footer>
-</body>
 </html>

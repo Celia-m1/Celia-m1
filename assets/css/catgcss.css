@@ -1,161 +1,101 @@
-/* General styles for all elements */
-* {
-    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets a sans-serif font family */
-    font-weight: 300; /* Sets font weight to light */
-    font-style: oblique; /* Applies a slight slant to text */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-}
-/*navigation bar*/
-.nav {
-    background-color: #1b7174;
-    width: 100%;
-    height: 10%;
-    border-bottom-left-radius: 23px;
-    border-bottom-right-radius: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  /*the div inside the nav*/
-  .nav-items {
-    background-color: #1b7174;
-    right: 20%;
-    width: 30em;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    border-bottom-right-radius: 30px;
-  }
-  /*all links of the buttons*/
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  /*the buttons of the navigation bar*/
-  .nav-items > div {
-    font-size: 15px;
-    background-color: #dceded;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 15px;
-    width: 20%;
-    height: 2em;
-    margin: 4% 2% 4% 2%;
-    cursor: pointer;
-    transition: scale 0.2s ease-in, opacity 0.2s ease-in, filter 0.2 ease-in;
-  }
-  /*buttons change size and get blurry when hovering one*/
-  .nav-items > div:hover {
-    scale: 1.1;
-  }
-  .nav-items:has(.btn :hover) .btn:not(:hover) {
-    scale: 0.8;
-    opacity: 0.8;
-    filter: blur(4px);
-  }
-  @media screen and (max-width: 520px) {
-  }
-  /*the logo*/
-  .nav > img {
-    width: 6em;
-    height: 6em;
-    top: 1em;
-    left: 20px;
-    &:hover {
-      filter: drop-shadow(1px 1px 2px rgba(8, 88, 8, 0.664));
-    }
-  }
-  
 
 body {
-    background-image:url(../images/img1scf.jpg); /* Sets a background image for the entire page */
-    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background: #dceded;
+    background-image:url(../images/backgroundscf.jpg); /* Sets a background image for the entire page */
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
 }
+
 
 /* Categories Section */
 .categories {
-    position: absolute; /* Positions element absolutely */
-    height: 800px; /* Sets a fixed height */
-    border-radius: 20%; /* Rounds the corners */
-    margin-left: 2rem; /* Adds left margin */
-    transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
+  position: absolute; /* Positions element absolutely */
+  height: 800px; /* Sets a fixed height */
+  border-radius: 20%; /* Rounds the corners */
+  margin-left: 3rem ; /* Adds left margin */
+  margin-top: 30px;
+  transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
 }
 
 .categories h3 {
-    color: white; /* Sets text color to white */
-    font-size: 2rem; /* Sets font size */
+  color: white; /* Sets text color to white */
+  font-size: 2rem; /* Sets font size */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .titcat {
-    position: absolute;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  position: absolute;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
 }
 
 .cat1 {
-    margin-top: 3rem; /* Adds top margin */
-    height: 0%;
-    width: 300px;
-    opacity: 0; /* Hides element initially */
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
+  margin-top: 5rem; /* Adds top margin */
+  width: 200px;
+  opacity: 0; /* Hides element initially */
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
 }
 
 /* Makes .cat1 visible when #toggle-cat is checked */
 #toggle-cat:checked ~ .cat1 {
-    opacity: 1;
-    visibility: visible;
-    border-radius: 0 10% 10% 0;
-    background-color: rgba(41, 82, 30, 0.4); /* Adds a semi-transparent dark background */
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0 10% 10% 0;
+  background-color: rgba(85, 234, 237, 0.692); /* Adds a semi-transparent dark background */
 }
 
 .titcat:hover {
-    transform: scale(1.1); /* Enlarges element on hover */
+  transform: scale(1.1); /* Enlarges element on hover */
 }
 
-.cat1 h3 {
-    text-align: center;
-    font-size: 50px; /* Sets font size */
-}
 
 /* General list styling */
 ul {
-    list-style: none; /* Removes default bullet points */
-    padding: 0; /* Removes default padding */
-    font-size: 50px;
+  list-style: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  font-size: 50px;
 }
 
 .categories li {
-    margin-bottom: 10px; /* Adds space between list items */
+  margin-bottom: 10px; /* Adds space between list items */
 }
 
-.categories a { 
-    font-size:18px ;
-    color: antiquewhite;
-    text-decoration: none; /* Removes underline from links */
-    display: block;
-    padding: 10px; /* Adds padding around links */
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+.categories a {
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  text-decoration: none; /* Removes underline from links */
+  display: block;
+  padding: 10px; /* Adds padding around links */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
 }
 
 .categories a:hover {
-    background-color: rgba(255, 255, 255, 0.603); /* Lightens background color on hover */
-    color: #333; /* Changes text color */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.603
+  ); /* Lightens background color on hover */
+  color: #333; /* Changes text color */
 }
 
 .categories a:last-child:hover {
-    border-radius: 10%; /* Adds extra rounding on hover */
-    background-color: rgba(255, 255, 255, 0.534);
-    color: #333;
+  border-radius: 10%; /* Adds extra rounding on hover */
+  background-color: rgba(255, 255, 255, 0.534);
+  color: #333;
 }
+
+
 
 /* Style for the search bar container */
 .search-container {
@@ -249,7 +189,7 @@ h1 {
 }
 
 /* Caption styles for books */
-figcaption {
+figure {
     text-align: center;
     font-size: 1rem;
     margin-top: 5px;
@@ -355,106 +295,3 @@ figcaption {
     text-align: center;
 }
 
-
-
-/* General footer styling */
-footer {
-    background-color: #166063;
-    padding: 20px;
-    border-top: 2px solid #000;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    height: 20%;
-    color: #dceded ;
-}
-
-/* Footer container layout */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-right: 40px;
-}
-
-/* Footer section layout */
-.footer-section {
-    width: 33%;
-    margin: 40px 0;
-}
-
-/* Footer section heading styling */
-.footer-section h3 {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-
-/* Footer list layout */
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-
-/* Footer link styling */
-.footer-section ul li a {
-    text-decoration: none;
-    color: #dceded ;
-    font-size: 25px;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-    color: #dceded;
-}
-
-/* Social media styling */
-.social-media {
-    padding-left: 0;
-}
-
-.social-media li {
-    display: flex;
-    align-items: center;
-}
-
-.social-media li img {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-}
-
-/* Icon styling within footer */
-.footer-section p img {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-}
-
-/* Responsive layout adjustments for footer */
-@media screen and (max-width: 768px) {
-    .footer-section {
-        width: 100%;
-    }
-}
-
-/* Copyright section styling */
-.footer-copyright {
-    background-color: #dceded ;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 30px;
-}
