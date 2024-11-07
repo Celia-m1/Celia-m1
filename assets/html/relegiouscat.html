@@ -5,49 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/religiouscat.css"> <!-- Link to external CSS -->
     <title>Religious categorie</title> <!-- Page title for better SEO -->
+    <link rel="icon" href="../images/logo copy.png" type="image">
 </head>
 <body>
 
     <main>
 
-        <nav class="nav">
-            <link rel="stylesheet" href="../css/navigationbar.css">
-            <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
-            <div class="nav-items">
-                <div class="btn"><a href="../assets/html/home.html">HOME</a></div>
-                <div class="btn"><a href="../assets/html/services.html">SERVICES</a></div>
-                <div class="btn"><a href="">MAP</a></div>
-                <div class="btn"><a href="../assets/html/account.html">PROFILE</a></div>
-            </div>
-        </nav>
+       <nav class="nav">
+    <link rel="stylesheet" href="../css/navigationbar.css">
+    <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
+    <div class="nav-items">
+        <div class="btn"><a href="./home.html">HOME</a></div>
+        <div class="btn"><a href="./services.html">SERVICES</a></div>
+        <div class="btn"><a href="./html/map.html">MAP</a></div>
+        <div class="btn"><a href="./account.html">PROFILE</a></div>
+    </div>
+</nav>
         
 
+<div class="categories"> <!-- Categories section -->
+    <!-- Hidden checkbox for toggle functionality to show/hide categories -->
+    <input type="checkbox" id="toggle-cat" hidden>
 
-        <div class="categories"> <!-- Categories section -->
-            <!-- Hidden checkbox for toggle functionality to show/hide categories -->
-            <input type="checkbox" id="toggle-cat" hidden>
-            
-            <!-- Label to simulate the clickable button for toggling categories -->
-            <label for="toggle-cat" class="titcat">
-                <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
-                <h3>Categories</h3> <!-- Categories title -->
-            </label>
-           
-            <!-- Content to show/hide categories -->
-            <div class="cat1">
-                <ul> <!-- Unordered list of categories -->
-                    <li><a href="https://www.instagram.com/">Biology</a></li>
-                    <li><a href="#">Educatif</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Police</a></li>
-                    <li><a href="#">Religious</a></li>
-                    <li><a href="#">Romance</a></li>
-                    <li><a href="#">Science Fiction</a></li>
-                </ul>
-            </div>
-        </div>
-        
+    <!-- Label to simulate the clickable button for toggling categories -->
+    <label for="toggle-cat" class="titcat">
+        <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
+        <h3>  Categories</h3> <!-- Categories title -->
+    </label>
+
+    <!-- Content to show/hide categories -->
+    <div class="cat1">
+        <ul> <!-- Unordered list of categories -->
+            <li><a href="../html/biology.html">Biology</a></li>
+            <li><a href="../html/educatif.html">Educatif</a></li>
+            <li><a href="../html/mathscat.html">Mathematics</a></li>
+            <li><a href="../html/physics.html">Physics</a></li>
+            <li><a href="../html/policecat.html">Police</a></li>
+            <li><a href="../html/relegiouscat.html">Religious</a></li>
+            <li><a href="../html/romance.html">Romance</a></li>
+            <li><a href="../html/scienficcat.html">Science Fiction</a></li>
+        </ul>
+    </div>
+</div>
         <div class="search-container"> <!-- Search bar section -->
             <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
             <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
@@ -63,7 +62,7 @@
         <figure>
             <img src="../images/zed el miaad.jpg" alt="Book Cover">
         </a>
-        <figcaption>Zad Al-Ma'âd</figcaption>
+        <h3>Zad Al-Ma'âd</h3>
         <p>Author: Ibn al-Qayyim</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -77,7 +76,7 @@
         <figure>
             <img src="../images/alfiyat ben malik.jpg" alt="Book Cover">
         </a>
-        <figcaption>Al-Alfiyya d'Ibn Malik</figcaption>
+        <h3>Al-Alfiyya d'Ibn Malik</h3>
         <p>Author: Ibn Malik</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -92,7 +91,7 @@
         <figure>
             <img src="../images/bidaya w nihaya.jpg" alt="Book Cover">
         </a>
-        <figcaption>Al-bidaya wa an-nihaya</figcaption>
+        <h3>Al-bidaya wa an-nihaya</h3>
         <p>Author: Ibn Kathir</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -110,7 +109,7 @@
         <figure>
             <img src="../images/arbaoun nawawi.jpg" alt="Book Cover">
         </a>
-        <figcaption>Charh Arba'in an-Nawawi</figcaption>
+        <h3>Charh Arba'in an-Nawawi</h3>
         <p>Author: cheikh al-'Uthaymin</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -125,7 +124,7 @@
         <figure>
             <img src="../images/tafsir ibn kathir.jpg" alt="Book Cover">
         </a>
-        <figcaption>Tafsir ibn Kathir</figcaption>
+        <h3>Tafsir ibn Kathir</h3>
         <p>Author: Ibn Kathîr</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -140,7 +139,7 @@
         <figure>
             <img src="../images/tafsir el saadi.jpg" alt="Book Cover">
         </a>
-        <figcaption>Taysîr Al Karîm Ar-Rahmâne</figcaption>
+        <h3>Taysîr Al Karîm Ar-Rahmâne</h3>
         <p>Author: A Saadi</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -159,7 +158,7 @@
         <figure>
             <img src="../images/chrah osol talata.jpg" alt="Book Cover">
         </a>
-        <figcaption>Charh Usul Ath-Thalâtha </figcaption>
+        <h3>Charh Usul Ath-Thalâtha </h3>
         <p>Author: Muhammad ibn Abdul Wahhab</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -174,7 +173,7 @@
         <figure>
             <img src="../images/tawheed.jpg" alt="Book Cover">
         </a>
-        <figcaption>Title: Tawheed</figcaption>
+        <h3>Title: Tawheed</h3>
         <p>Author: Muhammad ibn Abdul Wahhab</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -189,7 +188,7 @@
         <figure>
             <img src="../images/zed el mostanlkie.jpg" alt="Book Cover">
         </a>
-        <figcaption>Zaad al-Mustaqni’ </figcaption>
+        <h3>Zaad al-Mustaqni’ </h3>
         <p>Author: Al-Hajaawi </p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/mathscss.css"> <!-- Link to external CSS -->
     <title>Maths categorie</title> <!-- Page title for better SEO -->
+    <link rel="icon" href="../images/logo copy.png" type="image">
 </head>
 <body>
 
@@ -14,45 +15,46 @@
             <link rel="stylesheet" href="../css/navigationbar.css">
             <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
             <div class="nav-items">
-                <div class="btn"><a href="../assets/html/home.html">HOME</a></div>
-                <div class="btn"><a href="../assets/html/services.html">SERVICES</a></div>
-                <div class="btn"><a href="">MAP</a></div>
-                <div class="btn"><a href="../assets/html/account.html">PROFILE</a></div>
+                <div class="btn"><a href="./home.html">HOME</a></div>
+                <div class="btn"><a href="./services.html">SERVICES</a></div>
+                <div class="btn"><a href="./html/map.html">MAP</a></div>
+                <div class="btn"><a href="./account.html">PROFILE</a></div>
             </div>
         </nav>
+                
         
-             
         <div class="categories"> <!-- Categories section -->
             <!-- Hidden checkbox for toggle functionality to show/hide categories -->
             <input type="checkbox" id="toggle-cat" hidden>
-            
+        
             <!-- Label to simulate the clickable button for toggling categories -->
             <label for="toggle-cat" class="titcat">
                 <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
-                <h3>Categories</h3> <!-- Categories title -->
+                <h3>  Categories</h3> <!-- Categories title -->
             </label>
-           
+        
             <!-- Content to show/hide categories -->
             <div class="cat1">
                 <ul> <!-- Unordered list of categories -->
-                    <li><a href="https://www.instagram.com/">Biology</a></li>
-                    <li><a href="#">Educatif</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Police</a></li>
-                    <li><a href="#">Religious</a></li>
-                    <li><a href="#">Romance</a></li>
-                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="../html/biology.html">Biology</a></li>
+                    <li><a href="../html/educatif.html">Educatif</a></li>
+                    <li><a href="../html/mathscat.html">Mathematics</a></li>
+                    <li><a href="../html/physics.html">Physics</a></li>
+                    <li><a href="../html/policecat.html">Police</a></li>
+                    <li><a href="../html/relegiouscat.html">Religious</a></li>
+                    <li><a href="../html/romance.html">Romance</a></li>
+                    <li><a href="../html/scienficcat.html">Science Fiction</a></li>
                 </ul>
             </div>
         </div>
+                <div class="search-container"> <!-- Search bar section -->
+                    <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
+                    <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
+                </div>
         
-        <div class="search-container"> <!-- Search bar section -->
-            <input type="text" placeholder="Search..." class="search-input"> <!-- Input field for search -->
-            <button class="search-btn"></button> <!-- Search button (currently no text or icon) -->
-        </div>
-
-
+        
+        
+        
 
 <div class="bookscat">
       <!-- Rows of books -->
@@ -61,7 +63,7 @@
         <figure>
             <img src="../images/book2.jpg" alt="Book Cover">
         </a>
-        <figcaption >Mathematical Modelling of the Human Cardiovascular System</figcaption>
+        <h3 >Mathematical Modelling of the Human Cardiovascular System</h3>
         <p>Author: Alfio Quarteroni</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -76,7 +78,7 @@
         <figure>
             <img src="../images/book1.jpg" alt="Book Cover">
         </a>
-        <figcaption>Title: A textbook of ALgebra</figcaption>
+        <h3>Title: A textbook of ALgebra</h3>
         <p>Author: S.C. Shah, S.K. & Garg</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -91,7 +93,7 @@
         <figure>
             <img src="../images/book3.jpg" alt="Book Cover">
         </a>
-        <figcaption>Hardy Spaces</figcaption>
+        <h3>Hardy Spaces</h3>
         <p>Author: Nikolaï Nikolski</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -109,7 +111,7 @@
         <figure>
             <img src="../images/book4.jpg" alt="Book Cover">
         </a>
-        <figcaption>Complex Analysis</figcaption>
+        <h3>Complex Analysis</h3>
         <p>Ian Stewart, David Tall</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -124,7 +126,7 @@
         <figure>
             <img src="../images/book5.jpg" alt="Book Cover">
         </a>
-        <figcaption>From Servant to Queen: A Journey through Victorian Mathematics</figcaption>
+        <h3>From Servant to Queen: A Journey through Victorian Mathematics</h3>
         <p>Author: John Heard</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -139,7 +141,7 @@
         <figure>
             <img src="../images/book6.jpg" alt="Book Cover">
         </a>
-        <figcaption>Hamiltonian Systems</figcaption>
+        <h3>Hamiltonian Systems</h3>
         <p>Authors: Philip J. Morrison, Tere M-Seara, Sergei Tabachnikov</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -158,7 +160,7 @@
         <figure>
             <img src="../images/book7.jpg" alt="Book Cover">
         </a>
-        <figcaption>Groups and Graphs, Designs and Dynamics</figcaption>
+        <h3>Groups and Graphs, Designs and Dynamics</h3>
         <p>Author: Peter J. Cameron, Yaokun Wu</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -173,7 +175,7 @@
         <figure>
             <img src="../images/book8.jpg" alt="Book Cover">
         </a>
-        <figcaption>Mathematics for Economics and Finance</figcaption>
+        <h3>Mathematics for Economics and Finance</h3>
         <p>Author: John Doe</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">
@@ -188,7 +190,7 @@
         <figure>
             <img src="../images/book9.jpg" alt="Book Cover">
         </a>
-        <figcaption>Higher Special Functions</figcaption>
+        <h3>Higher Special Functions</h3>
         <p>Author: Wolfgang Lay</p>
         <div class="rating">
             <img src="../images/star.png" alt="Star" class="star">

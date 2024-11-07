@@ -1,6 +1,6 @@
 /* General footer styling */
 footer {
-    background-color: #F1E5D1;
+    background-color: rgb(221, 248, 253);
     padding: 20px;
     border-top: 2px solid #000;
     font-family: Arial, sans-serif;
@@ -46,14 +46,14 @@ footer {
 /* Link styling inside footer sections */
 .footer-section ul li a {
     text-decoration: none;
-    color: #02732A;
+    color: #104084;
     transition: color 0.3s ease;
 }
 
 /* Hover effect for footer links */
 .footer-section ul li a:hover {
     text-decoration: underline;
-    color: #025A1F;
+    color: #3b74cb;
 }
 
 /* Social media list styling */
@@ -74,7 +74,6 @@ footer {
 }
 
 .footer-section p{
-
     font-size: 16 px ;
     text-align: left;
 }
@@ -94,7 +93,7 @@ footer {
 
 /* Styling for the copyright section */
 .footer-copyright {
-    background-color: #29521ECC;
+    background-color:  #166063;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;

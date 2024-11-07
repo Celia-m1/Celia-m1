@@ -7,15 +7,34 @@
     <title>Map</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="../css/map.css   ">
+    <link rel="icon" href="../images/logo copy.png" type="image">
 </head>
+
+
+<nav class="nav">
+    <link rel="stylesheet" href="../css/navigationbar.css">
+    <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
+    <div class="nav-items">
+        <div class="btn"><a href="./home.html">HOME</a></div>
+        <div class="btn"><a href="./services.html">SERVICES</a></div>
+        <div class="btn"><a href="./map.html">MAP</a></div>
+        <div class="btn"><a href="./account.html">PROFILE</a></div>
+    </div>
+</nav>
+
 
 <body>
 
-    <section class="location-section">
-        <h2>Where are you?</h2>
-        <div id="map"></div>
-    </section>
+<div class="container">
 
+    <h1>Find Bookstores Near You</h1>
+
+    <div class="input-container">
+
+        <label for="location">Enter Your Location:</label>
+        <input type="text" id="location" placeholder="e.g., Hussein Dey">
+        <button onclick="findNearbyBookstores()">Search</button>
+    </div>
 
     <div id ="map">
 
@@ -42,6 +61,7 @@
 
     </div>
 
+
     <section class="results-section">
         <h3>RESULTS:</h3>
         <div class="result-item">
@@ -59,7 +79,72 @@
     </section>
 
 
+</div>
+
 </body>
 
+ <!-- Footer section -->
+ <footer>
+    <link rel="stylesheet" href="../css/footer.css">
+    <div class="footer-container">
+        <!-- Support & Contact Section -->
+        <div class="footer-section">
+            <h3>Support & Contact:</h3>
+            <ul>
+                <li><a href="../html/Contact.html">Contact Us</a></li>
+                <li><a href="home.html">Help</a></li>
+                <li><a href="home.html">Feedback</a></li>
+            </ul>
+            <p>
+                <img src="../images/call.png" alt="Phone icon"> (+213) 219999999
+            </p>
+        </div>
+        
+
+        <!-- About Us & Policies Section -->
+        <div class="footer-section">
+            <h3>About Us & Policies:</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
+            </ul>
+            <p>
+                <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com
+            </p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section">
+            <h3>Social Media:</h3>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com" aria-label="Facebook">
+                        <img src="../images/facebook.png" alt="Facebook icon"> Libro
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" aria-label="Instagram">
+                        <img src="../images/instagram.png" alt="Instagram icon"> Libro
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.x.com" aria-label="Twitter">
+                        <img src="../images/twitter.png" alt="Twitter icon"> Libro
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" aria-label="LinkedIn">
+                        <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright section -->
+    <div class="footer-copyright">
+        <p>&copy; 2024 Libro. All rights reserved.</p>
+    </div>
+</footer>
 
 </html>
