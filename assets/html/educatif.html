@@ -7,42 +7,48 @@
     <title>Education</title> <!-- Page title for better SEO -->
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
-            <div class="nav-items">
-                <div class="btn"><a href="">HOME</a></div>
-                <div class="btn"><a href="">SERVICES</a></div>
-                <div class="btn"><a href="">MAP</a></div>
-                <div class="btn"><a href="">PROFILE</a></div>
-            </div>
-        </nav>
-    </header>
 
     <main>
-        <div class="categories">
-            <!-- Hidden checkbox for toggle functionality -->
-            <input type="checkbox" id="toggle-cat" hidden>
-            
-            <!-- Label to simulate the clickable button -->
-            <label for="toggle-cat" class="titcat">
-                <img src="../images/menu.png" height="50px" width="50px" alt="Menu">
-            </label>
-           
-            <!-- Content to show/hide -->
-            <div class="cat1">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/">Biology</a></li>
-                    <li><a href="#">Educatif</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Police</a></li>
-                    <li><a href="#">Religious</a></li>
-                    <li><a href="#">Science Fiction</a></li>
-                </ul>
-            </div>
-        </div>
+
+        <nav class="nav">
+     <link rel="stylesheet" href="../css/navigationbar.css">
+     <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
+     <div class="nav-items">
+         <div class="btn"><a href="./home.html">HOME</a></div>
+         <div class="btn"><a href="./services.html">SERVICES</a></div>
+         <div class="btn"><a href="./map.html">MAP</a></div>
+         <div class="btn"><a href="./account.html">PROFILE</a></div>
+     </div>
+ </nav>
+         
+ 
+ <div class="categories"> <!-- Categories section -->
+     <!-- Hidden checkbox for toggle functionality to show/hide categories -->
+     <input type="checkbox" id="toggle-cat" hidden>
+ 
+     <!-- Label to simulate the clickable button for toggling categories -->
+     <label for="toggle-cat" class="titcat">
+         <img src="../images/menu.png" height="50px" width="50px" alt="Menu"> <!-- Menu icon -->
+         <h3>  Categories</h3> <!-- Categories title -->
+     </label>
+ 
+     <!-- Content to show/hide categories -->
+     <div class="cat1">
+         <ul> <!-- Unordered list of categories -->
+             <li><a href="../html/biology.html">Biology</a></li>
+             <li><a href="../html/educatif.html">Educatif</a></li>
+             <li><a href="../html/mathscat.html">Mathematics</a></li>
+             <li><a href="../html/physics.html">Physics</a></li>
+             <li><a href="../html/policecat.html">Police</a></li>
+             <li><a href="../html/relegiouscat.html">Religious</a></li>
+             <li><a href="../html/romance.html">Romance</a></li>
+             <li><a href="../html/scienficcat.html">Science Fiction</a></li>
+         </ul>
+     </div>
+ </div>
+
+
+
         <div class="search-container">
             <input type="text" placeholder="Search..." class="search-input">
             <button class="search-btn"></button>
@@ -114,6 +120,10 @@
 
     </main>
 
+
+</body>
+
+    <!-- Footer section -->
     <footer>
         <link rel="stylesheet" href="../css/footer.css">
         <div class="footer-container">
@@ -175,6 +185,4 @@
             <p>&copy; 2024 Libro. All rights reserved.</p>
         </div>
     </footer>
-
-</body>
 </html>

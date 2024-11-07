@@ -75,85 +75,91 @@ body {
   
 
 
-
 /* Categories Section */
 .categories {
     position: absolute; /* Positions element absolutely */
     height: 800px; /* Sets a fixed height */
     border-radius: 20%; /* Rounds the corners */
-    margin-left: 2rem; /* Adds left margin */
+    margin-left: 3rem ; /* Adds left margin */
+    margin-top: 30px;
     transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
-}
-
-.categories h3 {
+  }
+  
+  .categories h3 {
     color: white; /* Sets text color to white */
     font-size: 2rem; /* Sets font size */
-}
-
-.titcat {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  
+  .titcat {
     position: absolute;
     cursor: pointer; /* Changes cursor to pointer on hover */
     display: flex;
     align-items: center; /* Centers content vertically */
     transition: transform 0.3s ease; /* Smooth scale effect on hover */
-}
-
-.cat1 {
-    margin-top: 3rem; /* Adds top margin */
-    height: 100%;
-    width: 300px;
+  }
+  
+  .cat1 {
+    margin-top: 5rem; /* Adds top margin */
+    width: 200px;
     opacity: 0; /* Hides element initially */
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
-}
-
-/* Makes .cat1 visible when #toggle-cat is checked */
-#toggle-cat:checked ~ .cat1 {
+  }
+  
+  /* Makes .cat1 visible when #toggle-cat is checked */
+  #toggle-cat:checked ~ .cat1 {
     opacity: 1;
     visibility: visible;
     border-radius: 0 10% 10% 0;
-    background-color: #166063; /* Adds a semi-transparent dark background */
-}
-
-.titcat:hover {
+    background-color: rgba(85, 234, 237, 0.692); /* Adds a semi-transparent dark background */
+  }
+  
+  .titcat:hover {
     transform: scale(1.1); /* Enlarges element on hover */
-}
-
-.cat1 h3 {
-    text-align: center;
-    font-size: 50px; /* Sets font size */
-}
-
-/* General list styling */
-ul {
+  }
+  
+  
+  /* General list styling */
+  ul {
     list-style: none; /* Removes default bullet points */
     padding: 0; /* Removes default padding */
     font-size: 50px;
-}
-
-.categories li {
+  }
+  
+  .categories li {
     margin-bottom: 10px; /* Adds space between list items */
-}
-
-.categories a {
-    color: antiquewhite;
+  }
+  
+  .categories a {
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
     text-decoration: none; /* Removes underline from links */
     display: block;
     padding: 10px; /* Adds padding around links */
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-}
-
-.categories a:hover {
-    background-color: rgba(255, 255, 255, 0.603); /* Lightens background color on hover */
+  }
+  
+  .categories a:hover {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.603
+    ); /* Lightens background color on hover */
     color: #333; /* Changes text color */
-}
-
-.categories a:last-child:hover {
+  }
+  
+  .categories a:last-child:hover {
     border-radius: 10%; /* Adds extra rounding on hover */
     background-color: rgba(255, 255, 255, 0.534);
     color: #333;
-}
+  }
+  
+  
 
 /* Style for the search bar container */
 .search-container {
@@ -250,7 +256,7 @@ figcaption{
     
 }
 
-figcaption , p {
+figcaption , .book p {
     font-size: 1.5rem;
     font-family: 'Playfair Display', sans-serif;
     color: black;
