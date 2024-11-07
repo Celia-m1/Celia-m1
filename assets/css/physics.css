@@ -100,13 +100,15 @@ body {
   position: absolute; /* Positions element absolutely */
   height: 800px; /* Sets a fixed height */
   border-radius: 20%; /* Rounds the corners */
-  margin-left: 2rem; /* Adds left margin */
+  margin-left: 3rem; /* Adds left margin */
+  margin-top: 30px;
   transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
 }
 
 .categories h3 {
   color: white; /* Sets text color to white */
   font-size: 2rem; /* Sets font size */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .titcat {
@@ -118,9 +120,8 @@ body {
 }
 
 .cat1 {
-  margin-top: 3rem; /* Adds top margin */
-  height: 50%;
-  width: 300px;
+  margin-top: 5rem; /* Adds top margin */
+  width: 200px;
   opacity: 0; /* Hides element initially */
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
@@ -132,20 +133,15 @@ body {
   visibility: visible;
   border-radius: 0 10% 10% 0;
   background-color: rgba(
-    41,
-    82,
-    30,
-    0.4
+    85,
+    234,
+    237,
+    0.692
   ); /* Adds a semi-transparent dark background */
 }
 
 .titcat:hover {
   transform: scale(1.1); /* Enlarges element on hover */
-}
-
-.cat1 h3 {
-  text-align: center;
-  font-size: 50px; /* Sets font size */
 }
 
 /* General list styling */
@@ -161,7 +157,8 @@ ul {
 
 .categories a {
   font-size: 18px;
-  color: antiquewhite;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
   text-decoration: none; /* Removes underline from links */
   display: block;
   padding: 10px; /* Adds padding around links */
@@ -184,6 +181,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.534);
   color: #333;
 }
+
 /* Style for the search bar container */
 .search-container {
   display: flex;
