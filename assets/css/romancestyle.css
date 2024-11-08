@@ -133,12 +133,8 @@ body {
   opacity: 1;
   visibility: visible;
   border-radius: 0 10% 10% 0;
-  background-color: rgba(
-    85,
-    234,
-    237,
-    0.692
-  ); /* Adds a semi-transparent dark background */
+  background-color: #206264b2;
+  /* Adds a semi-transparent dark background */
 }
 
 .titcat:hover {

@@ -98,11 +98,6 @@ ul {
   background-color: #f1f1f1;
   position: relative; /* Needed to position the arrow */
 }
-.categories a:last-child:hover {
-  border-radius: 40%;
-  background-color: #bde8ca;
-  color: #333;
-}
 
 /* Style for the search input */
 .search-input {
