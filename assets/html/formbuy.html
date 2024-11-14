@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM FOR BUYING</title>
     <link rel="stylesheet" href="../css/formbuy.css"> <!-- Linking to the CSS file -->
+    <link rel="stylesheet" href="../css/navigationbar.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
             <div class="nav-items">
-                <div class="btn"><a href="">HOME</a></div>
-                <div class="btn"><a href="">SERVICES</a></div>
-                <div class="btn"><a href="">MAP</a></div>
-                <div class="btn"><a href="">PROFILE</a></div>
+                <div class="btn"><a href="../html/home.html">HOME</a></div>
+                <div class="btn"><a href="../html/services.html">SERVICES</a></div>
+                <div class="btn"><a href="../html/map.html">MAP</a></div>
+                <div class="btn"><a href="../html/account.html">PROFILE</a></div>
             </div>
         </nav>
     </header>
@@ -25,26 +26,32 @@
                     <div class="form-group">
                         <label class="label1" for="title">Title:</label>
                         <input type="text" id="title" name="title" required>
+                        <br><span id ="titlee"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="author">Author:</label>
                         <input type="text" id="author" name="author" required>
+                        <br><span id ="authorr"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="condition">Condition:</label>
                         <input type="text" id="condition" name="condition" required>
+                        <br><span id ="conditionn"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="edition">Edition:</label>
                         <input type="text" id="edition" name="edition" required>
+                        <br><span id ="editionn"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="year">Year of Publication:</label>
                         <input type="number" id="year" name="year" step="10" min="1960" max="3000" maxlength="4" required>
+                        <br><span id ="yearr"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="language">Language:</label>
                         <input type="text" id="language" name="language" required>
+                        <br><span id ="languagee"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for=" category">Category:</label>
@@ -62,14 +69,17 @@
                     <div class="form-group">
                         <label class="label1" for="pages">Number of Pages:</label>
                         <input type="number" id="pages" name="pages"  required>
+                        <br><span id ="pagess"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="summary">Summary:</label>
                         <textarea id="summary" name="summary" rows="4" required></textarea>
+                        <br><span id ="summaryy"></span> 
                     </div>
                     <div class="form-group">
                         <label class="label1" for="price">Price (D.A.):</label>
                         <input type="number" id="price" name="price" step="100" min="0" required>
+                        <br><span id ="pricee"></span> 
                     </div>
 
                 </form>
@@ -95,16 +105,13 @@
 
 
                 <div class="submit-div">
-                    <button class="submit">SUBMIT</button>
+                    <button class="submit" onclick="validation()">SUBMIT</button>
+                    
                 </div>
             </div>
             
         </div>
     </main>
-
-
-</body>  
-
     <!-- Footer section -->
     <footer>
         <link rel="stylesheet" href="../css/footer.css">
@@ -167,6 +174,12 @@
             <p>&copy; 2024 Libro. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../js/formbuy.js"></script>
+
+
+</body>  
+
+    
 
 </html>  
 

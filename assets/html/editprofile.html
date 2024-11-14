@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit profile</title>
     <link rel="stylesheet" href="../css/editprofile.css"> 
+    <link rel="stylesheet" href="../css/navigationbar.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO">
             <div class="nav-items">
-                <div class="btn"><a href="">HOME</a></div>
-                <div class="btn"><a href="">SERVICES</a></div>
-                <div class="btn"><a href="">MAP</a></div>
-                <div class="btn"><a href="">PROFILE</a></div>
+                <div class="btn"><a href="../html/home.html">HOME</a></div>
+                <div class="btn"><a href="../html/services.html">SERVICES</a></div>
+                <div class="btn"><a href="../html/map.html">MAP</a></div>
+                <div class="btn"><a href="../html/account.html">PROFILE</a></div>
             </div>
         </nav>
     </header>
@@ -26,19 +27,23 @@
             <div class="form-group">
                 <label class="labeledit" for ="username">Username:</label>
                 <input type="text" id="username" name="username" required>
+                <br><span id="usernamee"></span>
 
             </div>
             <div class="form-group">
                 <label class="labeledit" for="email">Email:</label>
-                <input type="email" id=" email " name="email" required>
+                <input type="email" id="email" name="email" required>
+                <br><span id="emaill"></span>
             </div>
             <div class="form-group">
                 <label class="labeledit" for="mobilephone">Mobile Phone:</label>
                 <input type="number" id="mobilephone" name="mobilephone" maxlength="10" required>
+                <br><span id="mobilephonee"></span>
             </div>
             <div class="form-group">
                 <label class="labeledit" for="location">Location:</label>
                 <input type="text " id="location" name="location " required>
+                <br><span id="locationn"></span>
             </div>
 
         
@@ -53,7 +58,7 @@
 
         <div class="profile-photo-button">Photo</div>
         <div class="submit-div">
-            <button class="submit">Submit</button>
+            <button class="submit" onclick="validation()">Submit</button>
         </div>
 
     </div>
@@ -124,6 +129,7 @@
             <p>&copy; 2024 Libro. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../js/editprofile.js"></script>
 
 
 </body>
