@@ -101,7 +101,7 @@
 
 .Categories {
     display: none;
-    background-color: rgba(85, 234, 237, 0.692);
+    background-color: #206264b2;
     border-radius: 8px;
     padding: 10px;
     position: absolute;
@@ -222,7 +222,7 @@ body{
     top: 70px; /* Position menu below the button */
     right: 0;
     width: 120px;
-    background-color:rgba(85, 234, 237, 0.692);
+    background-color:#206264b2;
     border-radius: 5px;
     padding: 5px 0;
 }
