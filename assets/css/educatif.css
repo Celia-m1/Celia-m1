@@ -9,93 +9,129 @@ body {
     padding: 0;
 }
 
-
-
-
-
 /* Categories Section */
 .categories {
-    position: absolute; /* Positions element absolutely */
-    height: 800px; /* Sets a fixed height */
-    border-radius: 20%; /* Rounds the corners */
-    margin-left: 3rem ; /* Adds left margin */
-    margin-top: 30px;
-    transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
+  position: absolute; /* Positions element absolutely */
+  height: 800px; /* Sets a fixed height */
+  border-radius: 5%; /* Rounds the corners */
+  margin-left: 3rem; /* Adds left margin */
+  margin-top: 30px;
+  transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
+}
+
+.titcat {
+  position: absolute;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.cat1 {
+  margin-top: 5rem; /* Adds top margin */
+  width: 200px;
+  opacity: 0; /* Hides element initially */
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
+}
+
+/* Makes .cat1 visible when #toggle-cat is checked */
+#toggle-cat:checked ~ .cat1 {
+  opacity: 1;
+  visibility: visible;
+  border-radius: 5% 5% 5% 5%;
+  background-color: #206264b2;
+  /* Adds a semi-transparent dark background */
+}
+
+.titcat:hover {
+  transform: scale(1.1); /* Enlarges element on hover */
+}
+
+/* General list styling */
+ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  font-size: 50px;
+}
+
+.categories li {
+  margin-bottom: 10px; /* Adds space between list items */
+}
+
+.categories a {
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  text-decoration: none; /* Removes underline from links */
+  display: block;
+  padding: 10px; /* Adds padding around links */
+  border-radius: 5%;
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.categories a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.603
+  ); /* Lightens background color on hover */
+  color: #333; /* Changes text color */
+}
+
+.categories a:last-child:hover {
+  border-radius: 5%; /* Adds extra rounding on hover */
+  background-color: rgba(255, 255, 255, 0.534);
+  color: #333;
+}
+.categories a:first-child:hover {
+  border-radius: 5%; /* Adds extra rounding on hover */
+  background-color: rgba(255, 255, 255, 0.534);
+  color: #333;
+}
+/* Media Queries for Responsiveness */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .categories {
+    width: 130px; /* Adjust width for medium screens */
+    padding: 8px; /* Reduce padding */
   }
-  
-  .categories h3 {
-    color: white; /* Sets text color to white */
-    font-size: 2rem; /* Sets font size */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  .categories ul li a {
+    font-size: 14px; /* Adjust font size */
+    padding: 4px; /* Reduce padding */
   }
-  
-  .titcat {
-    position: absolute;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .categories {
+    width: 110px;
+    padding: 6px;
   }
-  
-  .cat1 {
-    margin-top: 5rem; /* Adds top margin */
-    width: 200px;
-    opacity: 0; /* Hides element initially */
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smoothly fades element in/out */
+  .categories ul li a {
+    font-size: 13px;
+    padding: 3px;
   }
-  
-  /* Makes .cat1 visible when #toggle-cat is checked */
-  #toggle-cat:checked ~ .cat1 {
-    opacity: 1;
-    visibility: visible;
-    border-radius: 0 10% 10% 0;
-    background-color: rgba(85, 234, 237, 0.692); /* Adds a semi-transparent dark background */
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .categories {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5%; /* Round corners more for small screens */
   }
-  
-  .titcat:hover {
-    transform: scale(1.1); /* Enlarges element on hover */
+  .categories ul li a {
+    font-size: 12px;
+    padding: 2px;
   }
-  
-  
-  /* General list styling */
-  ul {
-    list-style: none; /* Removes default bullet points */
-    padding: 0; /* Removes default padding */
-    font-size: 50px;
-  }
-  
-  .categories li {
-    margin-bottom: 10px; /* Adds space between list items */
-  }
-  
-  .categories a {
-    font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    text-decoration: none; /* Removes underline from links */
-    display: block;
-    padding: 10px; /* Adds padding around links */
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-  }
-  
-  .categories a:hover {
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.603
-    ); /* Lightens background color on hover */
-    color: #333; /* Changes text color */
-  }
-  
-  .categories a:last-child:hover {
-    border-radius: 10%; /* Adds extra rounding on hover */
-    background-color: rgba(255, 255, 255, 0.534);
-    color: #333;
-  }
+}
+
+
+
+
   
   
 
