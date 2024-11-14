@@ -35,12 +35,8 @@
   opacity: 1;
   visibility: visible;
   border-radius: 0 10% 10% 0;
-  background-color: rgba(
-    85,
-    234,
-    237,
-    0.692
-  ); /* Adds a semi-transparent dark background */
+  background-color: #206264b2;
+  /* Adds a semi-transparent dark background */
 }
 
 .titcat:hover {
@@ -83,6 +79,44 @@ ul {
   border-radius: 10%; /* Adds extra rounding on hover */
   background-color: rgba(255, 255, 255, 0.534);
   color: #333;
+}
+/* Media Queries for Responsiveness */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .categories {
+    width: 130px; /* Adjust width for medium screens */
+    padding: 8px; /* Reduce padding */
+  }
+  .categories ul li a {
+    font-size: 14px; /* Adjust font size */
+    padding: 4px; /* Reduce padding */
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .categories {
+    width: 110px;
+    padding: 6px;
+  }
+  .categories ul li a {
+    font-size: 13px;
+    padding: 3px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .categories {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px; /* Round corners more for small screens */
+  }
+  .categories ul li a {
+    font-size: 12px;
+    padding: 2px;
+  }
 }
 
 /*navigation bar*/
