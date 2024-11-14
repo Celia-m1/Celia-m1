@@ -1,7 +1,7 @@
 /* General styles for all elements */
 body {
     background: #dceded;
-    background-image:url(../images/backgroundrelig.jpg); /* Sets a background image for the entire page */
+    background-color: #bab79d; /* Sets a background image for the entire page */
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
@@ -159,6 +159,87 @@ ul {
   color: #333;
 }
 
+
+/* Media Queries for Responsiveness */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .categories {
+    height: 600px;
+    margin-left: 2rem;
+  }
+
+  .categories h3 {
+    font-size: 1.8rem;
+  }
+
+  .categories a {
+    font-size: 16px;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .categories {
+    height: 500px;
+    margin-left: 1.5rem;
+  }
+
+  .categories h3 {
+    font-size: 1.6rem;
+  }
+
+  .categories a {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .categories {
+    height: 450px;
+    width: 90%;
+    margin-left: 1rem;
+    margin-top: 20px;
+  }
+
+  .categories h3 {
+    font-size: 1.4rem;
+  }
+
+  .titcat {
+    font-size: 1.2rem;
+  }
+
+  .categories a {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .categories {
+    height: 300px;
+    width: 100%;
+    margin-left: 0.5rem;
+    border-radius: 10%;
+  }
+
+  .categories h3 {
+    font-size: 1.2rem;
+  }
+
+  .titcat {
+    font-size: 1rem;
+  }
+
+  .categories a {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
 
 
 
