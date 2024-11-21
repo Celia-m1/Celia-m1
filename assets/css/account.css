@@ -345,3 +345,17 @@ hr {
     position: relative;
   }
 }
+/*add book button*/
+.add-book-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-book-button:hover {
+  background-color: #45a049; /* Darker green */
+}
