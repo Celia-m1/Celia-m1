@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 // Handle adding a new book
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded");
 document.getElementById('add-book-button').addEventListener('click', function () {
     // Prompt the user for the new book's title
     const bookTitle = prompt('Enter the title of the new book:');

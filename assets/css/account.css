@@ -347,7 +347,7 @@ hr {
 }
 /*add book button*/
 .add-book-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -357,5 +357,6 @@ hr {
 }
 
 .add-book-button:hover {
-  background-color: #45a049; /* Darker green */
+  background-color: #4b6e4c;
+  cursor: pointer;
 }
