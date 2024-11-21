@@ -8,7 +8,7 @@
 
 /* Body styling */
 body {
-    background-color: #A5B68DCC; /* Light green background color */
+    background-color: #166063; /* Light green background color */
 }
 
 /* Header styling */
@@ -19,7 +19,7 @@ header {
     height: 150px; /* Fixed height */
     text-align: center; /* Center text */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #EDE8DC; /* Light beige background */
+    background-color:#dceded  ; /* Light beige background */
     margin-top: 0;
     border-radius: 0px 0px 40px 40px; /* Rounded bottom corners */
 }
@@ -68,7 +68,7 @@ header {
     height: 600px; /* Fixed height */
     
     border-radius: 40px; /* Rounded corners */
-    background-color: #EDE8DC; /* Background color */
+    background-color: #dceded  ; /* Background color */
 }
 
 .log h2 {
@@ -90,16 +90,17 @@ label {
 }
 
 input {
+    color: #dceded;
     height: 60px; /* Input field height */
-    width: 350px; /* Input field width */
+    width: 75%; /* Input field width */
     font-size: 30px; /* Larger font size */
     border-radius: 40px; /* Rounded corners */
     margin-bottom: 20px; /* Space below input */
-    background-color: #A5B68DCC; /* Light green background */
+    background-color: #166063; /* Light green background */
 }
 
 input[type="submit"] {
-    background-color: #28a745; /* Green button background */
+    background-color: #166063; /* Green button background */
     height: 100px; /* Larger button height */
     color: rgb(255, 255, 255); /* White text */
     border: none; /* No border */
@@ -111,7 +112,7 @@ input[type="submit"] {
 
 /* Hover effect for submit button */
 input[type="submit"]:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #13575a; /* Darker green on hover */
 }
 
 /* Signup link styling */
@@ -126,7 +127,7 @@ input[type="submit"]:hover {
 button {
     height: 50px; /* Button height */
     width: 100px; /* Button width */
-    background-color: #29521E; /* Dark green background */
+    background-color: #166063; /* Dark green background */
     color: whitesmoke; /* Light text */
     border-radius: 40px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
@@ -134,7 +135,7 @@ button {
 
 button:hover {
     transform: scale(1.05); /* Slight enlargement on hover */
-    background-color: #2e8b57; /* Darker green */
+    background-color: #166063; /* Darker green */
 }
 
 .submit {
@@ -143,7 +144,7 @@ button:hover {
 
 /* Link styling */
 a {
-    color: #29521E; /* Link color */
+    color: wheat; /* Link color */
     text-decoration: underline; /* Underlined text */
 }
 
@@ -158,7 +159,8 @@ p {
 
 /* General footer styling */
 footer {
-    background-color: #F1E5D1; /* Light beige background */
+    margin-top: 10%;
+    background-color: #dceded ; /* Light beige background */
     padding: 20px; /* Padding */
     border-top: 2px solid #000; /* Top border */
     font-family: Arial, sans-serif; /* Font family */
@@ -204,7 +206,7 @@ footer {
 /* Link styling within footer */
 .footer-section ul li a {
     text-decoration: none; /* Remove underline */
-    color: #02732A; /* Green text */
+    color: black; /* Green text */
     font-size: 25px; /* Larger font */
     transition: color 0.3s ease; /* Smooth color transition */
 }
@@ -243,7 +245,7 @@ footer {
         width: 100%; /* Full width on small screens */
     }
 }
-
+header{font-size: 1rem;}
 /* Copyright section styling */
 .footer-copyright {
     background-color: #29521ECC; /* Dark green background */
@@ -286,4 +288,5 @@ footer p {
     .submit {
         margin-left: 0; /* Center the submit button */
     }
+    header{font-size: 1rem;}
 }

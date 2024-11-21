@@ -5,116 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logging Page</title>
     <link rel="stylesheet" href="../css/login.css">
-    
+    <style>
+        /* Ajout du mode sombre */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: white;
+        }
+
+        .log.dark-mode {
+            background-color: #444444;
+        }
+
+        a {
+            color: #02732A;
+        }
+
+        a.dark-mode {
+            color: #a1c181;
+        }
+    </style>
 </head>
-<body >
-  <header>
-    Welcome to LIBRO,<br>
-     Share a book and discover a new world !
-</header>
 <body>
+<header>
+    Welcome to LIBRO,<br>
+    Share a book and discover a new world!
+</header>
 
-    <div class="main">
-      <div class="INTRO">
-        <div class="INTRO">
-          <img src="../images/Capture1-removebg-preview.png" height="400px" width="400px" alt="Website Description">
-         
-      </div>
-      
-      
-    
-                <p>
-                  Exchange a book, enrich minds, no budget nedeed 
-                </p>
-            
-              </DIV>
-
-        <div class="log">
-          <h2>Sign in</h2>
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="username" id="username" placeholder="" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" placeholder="" required>
-                </div>
-                <div class="submit">
-                    
-                  <button >submit</button>
-                </div>
-                <a href="">have you forget your passsword?</a>
-            </form>
-            <div class="insc">don't you have an account?
-              <br><a href="inscription.html" target="_blank"> Sign up</a></div>
-        </div>
-        
+<div class="main">
+    <div class="INTRO">
+        <img src="../images/Capture1-removebg-preview.png" height="400px" width="400px" alt="Website Description">
+        <p>Exchange a book, enrich minds, no budget needed</p>
     </div>
-</body>
-    
-    <footer>
-      
-    </footer><!-- Footer section -->
-    <footer>
-        <div class="footer-container">
-            <!-- Support & Contact Section -->
-            <div class="footer-section">
-                <h3>Support & Contact:</h3>
-                <ul>
-                    <li><a href="../html/Contact.html">Contact Us</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-                <p>
-                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999
-                </p>
-            </div>
 
-            <!-- About Us & Policies Section -->
-            <div class="footer-section">
-                <h3>About Us & Policies:</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
-                </ul>
-                <p>
-                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com
-                </p>
+    <div class="log">
+        <h2>Sign in</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
             </div>
-
-            <!-- Social Media Section -->
-            <div class="footer-section">
-                <h3>Social Media:</h3>
-                <ul class="social-media">
-                    <li>
-                        <a href="#" aria-label="Facebook">
-                            <img src="../images/facebook.png" alt="Facebook icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Instagram">
-                            <img src="../images/instagram.png" alt="Instagram icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Twitter">
-                            <img src="../images/twitter.png" alt="Twitter icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="LinkedIn">
-                            <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro
-                        </a>
-                    </li>
-                </ul>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
             </div>
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+            <a href="">Forgot your password?</a>
+        </form>
+        <div class="insc">
+            Don't have an account?
+            <br><a href="inscription.html" target="_blank">Sign up</a>
         </div>
+    </div>
+</div>
 
-        <!-- Copyright section -->
-        <div class="footer-copyright">
-            <p>&copy; 2024 Libro. All rights reserved.</p>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Support & Contact:</h3>
+            <ul>
+                <li><a href="../html/Contact.html">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-section">
+            <h3>About Us & Policies:</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../html/Privacy Policies.html">Privacy Policies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media:</h3>
+            <ul class="social-media">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2024 Libro. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Validation dynamique du formulaire
+    document.querySelector('form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const username = document.getElementById('username');
+        const password = document.getElementById('password');
+        let valid = true;
+
+        if (username.value.trim() === '') {
+            valid = false;
+            alert('Username cannot be empty!');
+        }
+        if (password.value.trim() === '') {
+            valid = false;
+            alert('Password cannot be empty!');
+        }
+        if (valid) {
+            alert('Form submitted successfully!');
+            this.submit();
+        }
+    });
+
+    // Affichage/Masquage du mot de passe
+    const passwordField = document.getElementById('password');
+    const toggleButton = document.createElement('button');
+    toggleButton.innerText = 'Show ';
+    toggleButton.type = 'button';
+    passwordField.parentNode.appendChild(toggleButton);
+
+    toggleButton.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            this.innerText = 'Hide Password';
+        } else {
+            passwordField.type = 'password';
+            this.innerText = 'Show Password';
+        }
+    });
+
+    // Mode sombre/clair
+    const toggleThemeButton = document.createElement('button');
+    toggleThemeButton.innerText = 'Dark Mode';
+    document.body.appendChild(toggleThemeButton);
+
+    toggleThemeButton.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        document.querySelectorAll('a').forEach(link => {
+            link.classList.toggle('dark-mode');
+        });
+        toggleThemeButton.innerText =
+            document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+    });
+</script>
 </body>
 </html>
+

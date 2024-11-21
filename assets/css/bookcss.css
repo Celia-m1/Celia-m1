@@ -5,8 +5,8 @@
     color: white;
 }
 body{
-    background-image:url(../images/backgrndsc.jpg);
-    ;
+    background-color: #7A90A4;
+    
 }
 /*navigation bar*/
 .nav {
@@ -89,7 +89,7 @@ body{
     flex-wrap: nowrap;
     height: 90%;
     width: 65%;
-    background-color: #003161;
+    background-color: #344D59;
     border-radius: 40px;
    
 }
@@ -102,7 +102,7 @@ body{
     height: 60%;
     width: 40%;
     border-radius: 40px;
-    background-color: white; /* Green with transparency */
+    background-color: #137C8B; 
     
 }
 .pic img{
@@ -112,9 +112,50 @@ body{
     margin-top: 30px;
     width: 300px;
 }
+ /* Style du bouton */
+ .loading-button {
+    height: 40%;
+    width: 350px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 2rem;
+    background-color: #FFE59D;
+    color: black;
+    transition: background-color 0.3s ease;
+}
 
+.loading-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Style de l'animation de chargement */
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation de rotation */
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
 .stars {
     font-size: 2rem;
+    cursor: pointer;
+   
+}
+.rating{
+    cursor: pointer;
+   
    
 }
 
@@ -131,7 +172,12 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: #000;
 }
+.sec2 ul{
+    color: #000;
+}
+ul{color: #000;}
 .username{
     margin: 3rem;
     margin-left: 80px;
@@ -153,6 +199,7 @@ h3 {
 .details{
     margin-left: 2rem;
     margin-top: 0%;
+    color: #000;
 }
 .boutton{
     margin: 2rem;
@@ -186,7 +233,7 @@ button:hover {
     height: 200px;
     width: 400px;
     border-radius: 40px;
-    background-color:#003161;
+    background-color:#344D59;
    
     padding: 10px; /* Ajoute de l'espace à l'intérieur du conteneur */
 }
@@ -220,7 +267,7 @@ button:hover {
     height: 250px;
     width: 400px;
     border-radius: 40px;
-    background-color:#6482AD;
+    background-color:#344D59;
    
     padding: 10px;
 }
@@ -238,7 +285,7 @@ button:hover {
     margin-bottom: 10px;
 }
 .feedback-box input[type="submit"] {
-    background-color: #28a745;
+    background-color: #137C8B;
     color: white;
     border: none;
     height: 50px;
@@ -248,7 +295,7 @@ button:hover {
     cursor: pointer;
 }
 .feedback-box input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #137C8B;
 }
 /* Responsive Design */
 @media (max-width: 1200px) {

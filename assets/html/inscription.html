@@ -4,131 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="../css/insccss.css"> <!-- Optional: Link to a CSS file -->
+    <link rel="stylesheet" href="../css/insccss.css">
+    <script>
+        function validateForm(event) {
+            const name = document.getElementById("name").value.trim();
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+            const address = document.getElementById("address").value.trim();
+
+            const usernameRegex = /^[a-zA-Z0-9_.-]{3,20}$/; // Alphanumeric, 3-20 characters
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+            const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            let errors = [];
+
+            if (name === "") errors.push("Name is required.");
+            if (!usernameRegex.test(username)) errors.push("Username must be 3-20 characters and valid.");
+            if (!emailRegex.test(email)) errors.push("Invalid email format.");
+            if (!passwordRegex.test(password)) errors.push("Password is too weak.");
+            if (password !== confirmPassword) errors.push("Passwords do not match.");
+            if (address === "") errors.push("Address is required.");
+
+            if (errors.length > 0) {
+                event.preventDefault();
+                alert(errors.join("\n"));
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         Welcome to LIBRO,<br>
-        Share a book and discover a new world !
+        Share a book and discover a new world!
     </header>
     <main>
-        
-    <div class="main">
-        <div class="INTRO">
-          <div class="INTRO">
-            <img src="../images/Capture1-removebg-preview.png " height="400px" width="400px" alt="Website Description">
-           
+        <div class="main">
+            <div class="INTRO">
+                <img src="../images/Capture1-removebg-preview.png" height="400px" width="400px" alt="Website Description">
+                <p>Exchange a book, enrich minds, no budget needed.</p>
+            </div>
+            <form onsubmit="validateForm(event)">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Sign Up Form</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" placeholder="Enter your name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="username">Username:</label></td>
+                            <td><input type="text" id="username" placeholder="Enter a username" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" placeholder="Enter your email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" placeholder="Enter a strong password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm-password">Confirm Password:</label></td>
+                            <td><input type="password" id="confirm-password" placeholder="Re-enter your password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address:</label></td>
+                            <td><input type="text" id="address" placeholder="Enter your address" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="insc">
+                    Already have an account?<br>
+                    <a href="schoolprologging.html" target="_blank">Sign In</a>
+                </div>
+            </form>
         </div>
-        
-        
-      
-                  <p>
-                    Exchange a book, enrich minds, no budget nedeed 
-                  </p>
-              
-                </DIV>
-        <form>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Sign up form></form></th> <!-- Table header with a title -->
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label for="name">Name:</label></td>
-                        <td><input type="text" id="name" required></td>
-                    </tr>
-                    
-                    <tr>
-                        <td><label for="username">username:</label></td>
-                        <td><input type="text" id="username" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Your Email:</label></td>
-                        <td><input type="email" id="email" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password">Enter Your Password:</label></td>
-                        <td><input type="password" id="password" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="confirm-password">Confirm Your Password:</label></td>
-                        <td><input type="password" id="confirm-password" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="address">Enter Your Address:</label></td>
-                        <td><input type="text" id="address" required></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <button type="submit">Submit</button> <!-- Submit button -->
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="insc">you have an account?
-                <br><a href="schoolprologging.html" target="_blank"> Sign in</a></div>
-        </form>
     </main>
     <footer>
         <div class="footer-container">
-            <!-- Support & Contact Section -->
-            <div class="footer-section">
-                <h3>Support & Contact:</h3>
-                <ul>
-                    <li><a href="../html/Contact.html">Contact Us</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-                <p>
-                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999
-                </p>
-            </div>
-
-            <!-- About Us & Policies Section -->
-            <div class="footer-section">
-                <h3>About Us & Policies:</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
-                </ul>
-                <p>
-                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com
-                </p>
-            </div>
-
-            <!-- Social Media Section -->
-            <div class="footer-section">
-                <h3>Social Media:</h3>
-                <ul class="social-media">
-                    <li>
-                        <a href="#" aria-label="Facebook">
-                            <img src="../images/facebook.png" alt="Facebook icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Instagram">
-                            <img src="../images/instagram.png" alt="Instagram icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Twitter">
-                            <img src="../images/twitter.png" alt="Twitter icon"> Libro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="LinkedIn">
-                            <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Copyright section -->
-        <div class="footer-copyright">
-            <p>&copy; 2024 Libro. All rights reserved.</p>
+            <!-- Footer content -->
         </div>
     </footer>
 </body>

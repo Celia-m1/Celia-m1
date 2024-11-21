@@ -1,11 +1,10 @@
 <html>
     <head>
-<link rel="stylesheet" href="../css/bookcss.css">
+        <link rel="stylesheet" href="../css/bookcss.css">
     </head>
     <body>
         <header>
             <nav class="nav"> <!-- Navigation bar -->
-                
                 <img src="../images/logo copy.png" height="20px" width="20px" alt="LIBRO"> <!-- Logo image -->
                 <div class="nav-items"> <!-- Container for navigation buttons -->
                     <div class="btn"><a href="">HOME</a></div> <!-- Home button -->
@@ -15,54 +14,45 @@
                 </div>
             </nav>
         </header>
-        <main>
-
-       
-            <div class="book">
-            <div class="pic">
-                <img src="c:\Users\j\Downloads\left hand.jpg">
-               <div class="stars">☆ ☆ ☆ ☆ ☆</div>
-            </div>
-            <div class="discription">
-                <h2>The Left Hand of Darkness</h2>
-                <br>
-                by William Gibson
-                
-                <summary>A masterpiece of speculative science fiction set on a world where inhabitants can change gender, challenging ideas about identity.
-                </summary>
-
-            </div>
-
-            </div>
-            <div class="sec2">
-            <div class="username">
-                <figure>
-<img src="c:\Users\j\Downloads\photo_2024-09-07_21-39-41.jpg" >
-                </figure>
-                <figcaption>Mike</figcaption>
-            </div>
-            <div class="details">
-                <ul>
-                    <li>edition:
-                    </li>
-                    <li>
-                        condition:
-                    </li>
-                    <li>
-                        Year of publication:1985
-                    </li>
-                    <li>Language:english</li>
-                    <li>Price:800da
         
-                    </li>
-                </ul>
-            </div>
-            <div class="boutton">
-                <button id="sold">add </button>
-                <button id="reserve"> reverve now</button>
+        <main>
+            <div class="book">
+                <div class="pic">
+                    <img src="c:\Users\j\Downloads\left hand.jpg">
+                </div>
+                <div class="discription">
+                    <h2>The Left Hand of Darkness</h2>
+                    <br>
+                    by William Gibson
+                    <summary>A masterpiece of speculative science fiction set on a world where inhabitants can change gender, challenging ideas about identity.</summary>
+                </div>
             </div>
 
+            <div class="sec2">
+                <div class="username">
+                    <figure>
+                        <img src="c:\Users\j\Downloads\photo_2024-09-07_21-39-41.jpg">
+                    </figure>
+                    <figcaption>Mike</figcaption>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>edition:</li>
+                        <li>condition:</li>
+                        <li>Year of publication:1985</li>
+                        <li>Language:english</li>
+                        <li>Price:800da</li>
+                    </ul>
+                </div>
+                <div class="boutton">
+                    <button id="sold">add</button>
+                    <button class="loading-button" id="reserveBtn">
+                        Reserve Now
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                </div>
             </div>
+
             <h2>feedbacks</h2>
             <div class="feedbacks">
                 <div class="feed">
@@ -113,76 +103,152 @@
                         <div class="stars" id="done">☆ ☆ ☆ ☆ ☆</div>
                     </div>
                 </div>
-                <div class="feedback-box">
-                    <h2>add a feedback</h2>
-                    <form action="your-server-endpoint" method="post">
-                        <textarea name="feedback" placeholder="Enter your feedback here..." required></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-                
+                <!-- Add more feedbacks as needed -->
+            </div>
+
+            <div class="feedback-box">
+                <h2>Add a feedback</h2>
+                <form action="your-server-endpoint" method="post">
+                    <textarea name="feedback" placeholder="Enter your feedback here..." required></textarea>
+
+                    <!-- Star rating system -->
+                    <div class="rating">
+                        <span class="star" data-value="1">☆</span>
+                        <span class="star" data-value="2">☆</span>
+                        <span class="star" data-value="3">☆</span>
+                        <span class="star" data-value="4">☆</span>
+                        <span class="star" data-value="5">☆</span>
+                    </div>
+                    <input type="hidden" name="rating" id="rating-input" value="0">
+                    
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </main>
-            <footer>
-                <div class="footer-container"> <!-- Footer container -->
-                    <!-- Support & Contact Section -->
-                    <div class="footer-section">
-                        <h3>Support & Contact:</h3> <!-- Section title -->
-                        <ul> <!-- List of support links -->
-                            <li><a href="../html/Contact.html">Contact Us</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Feedback</a></li>
-                        </ul>
-                        <p>
-                            <img src="../images/call.png" alt="Phone icon"> (+213) 219999999 <!-- Contact phone number -->
-                        </p>
-                    </div>
-        
-                    <!-- About Us & Policies Section -->
-                    <div class="footer-section">
-                        <h3>About Us & Policies:</h3> <!-- Section title -->
-                        <ul> <!-- List of about and policies links -->
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
-                        </ul>
-                        <p>
-                            <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com <!-- Contact email -->
-                        </p>
-                    </div>
-        
-                    <!-- Social Media Section -->
-                    <div class="footer-section">
-                        <h3>Social Media:</h3> <!-- Section title -->
-                        <ul class="social-media"> <!-- List of social media links -->
-                            <li>
-                                <a href="#" aria-label="Facebook">
-                                    <img src="../images/facebook.png" alt="Facebook icon"> Libro <!-- Facebook link -->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="Instagram">
-                                    <img src="../images/instagram.png" alt="Instagram icon"> Libro <!-- Instagram link -->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="Twitter">
-                                    <img src="../images/twitter.png" alt="Twitter icon"> Libro <!-- Twitter link -->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="LinkedIn">
-                                    <img src="../images/linkedin.png" alt="LinkedIn icon"> Libro <!-- LinkedIn link -->
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <!-- Copyright section -->
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Libro. All rights reserved.</p> <!-- Copyright notice -->
-                </div>
-            </footer>
-        
+
+        <footer>
+            <link rel="stylesheet" href="../css/footer.css">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Support & Contact:</h3>
+                <ul>
+                    <li><a href="../html/Contact.html">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+                <p>
+                    <img src="../images/call.png" alt="Phone icon"> (+213) 219999999
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>About Us & Policies:</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../html/Privacy Policies.html ">Privacy Policies</a></li>
+                </ul>
+                <p>
+                    <img src="../images/gmail.png" alt="Email icon"> libro@gmail.com
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media:</h3>
+                <ul class="social-media">
+                    <li><a href="#" aria-label="Facebook"><img src="../images/facebook.png" alt="Facebook icon"> Libro</a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="../images/instagram.png" alt="Instagram icon"> Libro</a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="../images/twitter.png" alt="Twitter icon"> Libro</a></li>
+                    <li><a href="#" aria-label="LinkedIn"><img src="../images/linkedin.png" alt="LinkedIn icon"> Libro</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Libro. All rights reserved.</p>
+        </div>
+        </footer>
+
+        <!-- Audio file for click sound -->
+        <audio id="click-sound" src="../audio/click-sound.mp3"></audio>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Star rating logic
+                const starsContainer = document.querySelector(".rating");
+                const starsElements = Array.from(starsContainer.children);
+                let selectedRating = 0;
+
+                starsElements.forEach(star => {
+                    star.addEventListener("mouseover", () => {
+                        const index = parseInt(star.dataset.value);
+                        starsElements.forEach((s, i) => s.textContent = i < index ? "★" : "☆");
+                    });
+
+                    star.addEventListener("mouseout", () => {
+                        starsElements.forEach((s, i) => s.textContent = i < selectedRating ? "★" : "☆");
+                    });
+
+                    star.addEventListener("click", () => {
+                        selectedRating = parseInt(star.dataset.value);
+                        starsElements.forEach((s, i) => s.textContent = i < selectedRating ? "★" : "☆");
+
+                        // Set the hidden input field value
+                        document.getElementById("rating-input").value = selectedRating;
+
+                      
+                    });
+                });
+
+                // Play click sound on button click
+                const clickSound = document.getElementById('click-sound');
+                document.querySelectorAll('button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        clickSound.play();
+                    });
+                });
+
+                // Handle feedback form submission
+                const feedbackForm = document.querySelector(".feedback-box form");
+                feedbackForm.addEventListener("submit", function (e) {
+                    e.preventDefault(); // Prevent real form submission
+                    const feedbackText = feedbackForm.querySelector("textarea").value;
+
+                    if (feedbackText.trim()) {
+                        const feedbackContainer = document.querySelector(".feedbacks");
+                        const newFeedback = document.createElement("div");
+                        newFeedback.className = "feed";
+                        newFeedback.innerHTML = `
+                            <div class="username">
+                                <figure>
+                                    <img src="c:/Users/j/Downloads/photo_2024-09-07_21-39-41.jpg" alt="User Profile">
+                                </figure>
+                                <figcaption>New User</figcaption>
+                            </div>
+                            <div class="text">
+                                "${feedbackText.trim()}"
+                                <div class="stars">★ ★ ★ ★ ★</div>
+                            </div>
+                        `;
+                        feedbackContainer.insertBefore(newFeedback, feedbackContainer.querySelector(".feedback-box"));
+                        feedbackForm.reset(); // Reset the form
+                    }
+                });
+            });
+            document.getElementById("reserveBtn").addEventListener("click", function() {
+                const button = this;
+                const spinner = button.querySelector(".spinner");
+
+                // Désactiver le bouton et afficher le spinner
+                button.disabled = true;
+                spinner.style.display = "block";
+
+                // Simuler un délai de chargement (par exemple, 3 secondes)
+                setTimeout(function() {
+                    // Une fois le délai écoulé, réactiver le bouton et masquer le spinner
+                    button.disabled = false;
+                    spinner.style.display = "none";
+
+                    // Message ou action après l'animation
+                    alert("Réservation terminée !");
+                }, 3000); // Temps de simulation de chargement (en ms)
+            });
+        </script>
     </body>
 </html>

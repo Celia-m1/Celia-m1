@@ -2,6 +2,7 @@
 body {
     background: #dceded;
     background-image:url(../images/backgroundscf.jpg); /* Sets a background image for the entire page */
+    background-size: cover;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
@@ -232,31 +233,68 @@ figure {
     }
 
     .categories h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;  color:black;
+        }
     }
 
-    .row {
-        justify-content: center;
-    }
-
-    .book {
-        height: 300px;
-        width: 200px;
-    }
-
-    .book img {
-        height: 200px;
-        width: 150px;
-    }
-
-    .categories a {
-        font-size: 1rem;
-        padding: 8px;
-    }
-}
+    /* Row styles for book layout */
+.row {
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  /* Book item styles */
+  .book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    background-color: #96B6C5;
+    transition: transform 0.3s ease;
+    margin: 10px;
+  }
+  
+  .book:hover {
+    transform: scale(1.05);
+  }
+  
+  .book img {
+    margin: 2px;
+    height: 300px;
+    width: 200px;
+  }
+  
+  .book h1 {
+    text-decoration: none;
+    color: beige;
+  }
+  
+  .book a {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    color: beige;
+    text-decoration: none;
+  }
+  
+  /* Caption styles for books */
+  figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
 
 /* Responsive adjustments for small screens */
 @media (max-width: 480px) {
+    
     .discription {
         font-size: 25px;
     }
@@ -277,9 +315,13 @@ figure {
         width: 100%;
         height: auto;
     }
+    .categories h3 {
+        font-size: 1rem;
+        color: black;
+    }
 
     .search-container {
-        width: 100%;
+        width: 90%;
         margin: 20px auto;
     }
 
@@ -287,6 +329,10 @@ figure {
         width: 80%;
         position: relative;
     }
+    .titcat{font-size: 1rem;
+        margin: 2rem;
+    margin-right: 60px;}
+    
 }
 
 /* Category-specific book styling */
