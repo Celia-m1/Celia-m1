@@ -56,4 +56,4 @@ The website stands out because, unlike other platforms that offer free virtual c
 
 ## SITE MAP
 
-![sitemap](./assets/images/site-map.png)
+![sitemap](./assets/images/sitemap-removebg-preview.png)
