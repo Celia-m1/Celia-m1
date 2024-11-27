@@ -100,16 +100,10 @@ body {
 .categories {
   position: absolute; /* Positions element absolutely */
   height: 800px; /* Sets a fixed height */
-  border-radius: 20%; /* Rounds the corners */
+  border-radius: 5%; /* Rounds the corners */
   margin-left: 3rem; /* Adds left margin */
   margin-top: 30px;
   transition: background-color 0.5s ease; /* Smooth transition for background color on hover */
-}
-
-.categories h3 {
-  color: white; /* Sets text color to white */
-  font-size: 2rem; /* Sets font size */
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .titcat {
@@ -132,7 +126,7 @@ body {
 #toggle-cat:checked ~ .cat1 {
   opacity: 1;
   visibility: visible;
-  border-radius: 0 10% 10% 0;
+  border-radius: 5% 5% 5% 5%;
   background-color: #206264b2;
   /* Adds a semi-transparent dark background */
 }
@@ -159,7 +153,7 @@ ul {
   text-decoration: none; /* Removes underline from links */
   display: block;
   padding: 10px; /* Adds padding around links */
-  border-radius: 5px;
+  border-radius: 5%;
   transition: background-color 0.3s ease; /* Smooth background color transition on hover */
 }
 
@@ -174,7 +168,12 @@ ul {
 }
 
 .categories a:last-child:hover {
-  border-radius: 10%; /* Adds extra rounding on hover */
+  border-radius: 5%; /* Adds extra rounding on hover */
+  background-color: rgba(255, 255, 255, 0.534);
+  color: #333;
+}
+.categories a:first-child:hover {
+  border-radius: 5%; /* Adds extra rounding on hover */
   background-color: rgba(255, 255, 255, 0.534);
   color: #333;
 }
@@ -209,7 +208,7 @@ ul {
   .categories {
     width: 100px;
     padding: 5px;
-    border-radius: 5px; /* Round corners more for small screens */
+    border-radius: 5%; /* Round corners more for small screens */
   }
   .categories ul li a {
     font-size: 12px;
