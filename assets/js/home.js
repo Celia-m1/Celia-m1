@@ -11,9 +11,9 @@ let moveTo = 0;
 
 const createcarrossel = () => {
   const carrosselProps = onResize();
-  const length = carrosselItems.length; // Longitud del array
-  const degress = 360 / length; // Grados por cada item
-  const gap = 20; // Espacio entre cada item
+  const length = carrosselItems.length; 
+  const degress = 360 / length; 
+  const gap = 20; 
   const tz = distanceZ(carrosselProps.w, length, gap);
 
   const fov = calculateFov(carrosselProps);
@@ -34,7 +34,7 @@ const lerp = (a, b, n) => {
 };
 
 const distanceZ = (widthElement, length, gap) => {
-  return widthElement / 2 / Math.tan(Math.PI / length) + gap; // Distancia Z de los items
+  return widthElement / 2 / Math.tan(Math.PI / length) + gap; 
 };
 
 const calculateHeight = (z) => {
@@ -118,3 +118,17 @@ const initEvents = () => {
 };
 
 initEvents();
+
+let welcome=document.querySelector("#welcome");
+function writer(text,elementID,speed=50)
+{
+  let i=0;
+  function type(){
+    if (i<text.length){
+      welcome.innerHTML+=text.charAt(i);
+  i++;
+  setTimeout(type,speed);
+}
+}
+type();
+}
