@@ -34,12 +34,12 @@
             </div>
             <div class="form-group">
                 <label class="labeledit" for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required onkeyup="validationemail()">
                 <br><span id="emaill"></span>
             </div>
             <div class="form-group">
                 <label class="labeledit" for="mobilephone">Mobile Phone:</label>
-                <input type="number" id="mobilephone" name="mobilephone" maxlength="10" required>
+                <input type="number" id="mobilephone" name="mobilephone" required placeholder="Do not write +213...., write 05/06/07......">
                 <br><span id="mobilephonee"></span>
             </div>
             <div class="form-group">
@@ -60,7 +60,7 @@
 
         <div class="profile-photo-button">Photo</div>
         <div class="submit-div">
-            <button class="submit" onclick="validation()">Submit</button>
+            <button id="submitButton" class="submit" onclick="handleSubmit()">Submit</button>
         </div>
 
     </div>
