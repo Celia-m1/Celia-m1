@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../css/insccss.css">
     <script>
         function validateForm(event) {
+            event.preventDefault(); // Prevent form submission initially
+
+            // Clear previous error messages
+            const errorElements = document.querySelectorAll('.error-message');
+            errorElements.forEach(el => el.textContent = '');
+
+            // Input fields
             const name = document.getElementById("name").value.trim();
             const username = document.getElementById("username").value.trim();
             const email = document.getElementById("email").value.trim();
@@ -14,25 +21,67 @@
             const confirmPassword = document.getElementById("confirm-password").value;
             const address = document.getElementById("address").value.trim();
 
+            // Validation patterns
             const usernameRegex = /^[a-zA-Z0-9_.-]{3,20}$/; // Alphanumeric, 3-20 characters
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
             const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-            let errors = [];
+            // Track validation status
+            let isValid = true;
 
-            if (name === "") errors.push("Name is required.");
-            if (!usernameRegex.test(username)) errors.push("Username must be 3-20 characters and valid.");
-            if (!emailRegex.test(email)) errors.push("Invalid email format.");
-            if (!passwordRegex.test(password)) errors.push("Password is too weak.");
-            if (password !== confirmPassword) errors.push("Passwords do not match.");
-            if (address === "") errors.push("Address is required.");
+            // Validation logic
+            if (name === "") {
+                showError("name", "Name is required.");
+                isValid = false;
+            }
+            if (!usernameRegex.test(username)) {
+                showError("username", "Username must be 3-20 characters and valid.");
+                isValid = false;
+            }
+            if (!emailRegex.test(email)) {
+                showError("email", "Invalid email format.");
+                isValid = false;
+            }
+            if (!passwordRegex.test(password)) {
+                showError("password", "Password is too weak. Use at least 8 characters, including uppercase, lowercase, numbers, and special characters.");
+                isValid = false;
+            }
+            if (password !== confirmPassword) {
+                showError("confirm-password", "Passwords do not match.");
+                isValid = false;
+            }
+            if (address === "") {
+                showError("address", "Address is required.");
+                isValid = false;
+            }
 
-            if (errors.length > 0) {
-                event.preventDefault();
-                alert(errors.join("\n"));
+            // If valid, allow submission
+            if (isValid) {
+                document.querySelector("form").submit();
             }
         }
+
+        function showError(inputId, message) {
+            const inputElement = document.getElementById(inputId);
+            let errorElement = inputElement.nextElementSibling;
+
+            if (!errorElement || !errorElement.classList.contains("error-message")) {
+                // Create an error message element if it doesn't exist
+                errorElement = document.createElement("div");
+                errorElement.className = "error-message";
+                inputElement.parentNode.appendChild(errorElement);
+            }
+
+            errorElement.textContent = message;
+        }
     </script>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -55,27 +104,39 @@
                     <tbody>
                         <tr>
                             <td><label for="name">Name:</label></td>
-                            <td><input type="text" id="name" placeholder="Enter your name" required></td>
+                            <td>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="username">Username:</label></td>
-                            <td><input type="text" id="username" placeholder="Enter a username" required></td>
+                            <td>
+                                <input type="text" id="username" placeholder="Enter a username" required>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="email">Email:</label></td>
-                            <td><input type="email" id="email" placeholder="Enter your email" required></td>
+                            <td>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="password">Password:</label></td>
-                            <td><input type="password" id="password" placeholder="Enter a strong password" required></td>
+                            <td>
+                                <input type="password" id="password" placeholder="Enter a strong password" required>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="confirm-password">Confirm Password:</label></td>
-                            <td><input type="password" id="confirm-password" placeholder="Re-enter your password" required></td>
+                            <td>
+                                <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="address">Address:</label></td>
-                            <td><input type="text" id="address" placeholder="Enter your address" required></td>
+                            <td>
+                                <input type="text" id="address" placeholder="Enter your address" required>
+                            </td>
                         </tr>
                         <tr>
                             <td colspan="2" style="text-align: center;">

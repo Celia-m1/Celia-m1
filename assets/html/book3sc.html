@@ -215,19 +215,21 @@
                         const newFeedback = document.createElement("div");
                         newFeedback.className = "feed";
                         newFeedback.innerHTML = `
-                            <div class="username">
-                                <figure>
-                                    <img src="c:/Users/j/Downloads/photo_2024-09-07_21-39-41.jpg" alt="User Profile">
-                                </figure>
-                                <figcaption>New User</figcaption>
-                            </div>
-                            <div class="text">
-                                "${feedbackText.trim()}"
+                            
+                    <div class="username" id="feed2">
+                        <figure>
+                            <img src="c:\Users\j\Downloads\photo_2024-09-07_21-39-41.jpg" alt="Photo de profil">
+                        </figure>
+                        <figcaption>username (seller)</figcaption>
+                    </div>
+                    <div class="text">
+                      "${feedbackText.trim()}"
+                                
                                 <div class="stars">★ ★ ★ ★ ★</div>
                             </div>
                         `;
                         feedbackContainer.insertBefore(newFeedback, feedbackContainer.querySelector(".feedback-box"));
-                        feedbackForm.reset(); // Reset the form
+                      
                     }
                 });
             });
